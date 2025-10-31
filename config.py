@@ -14,8 +14,12 @@ DATA_CONFIG = {
 MODEL_CONFIG = {
     # 联邦学习配置
     "fed_num_clients": 10,  # 联邦学习客户端数量
-    "fed_num_rounds": 20,  # 联邦学习轮数
-    "fed_local_epochs": 5,  # 每轮本地训练轮数
+    "fed_num_rounds": 100,  # 联邦学习轮数
+    "fed_local_epochs": 1,  # 每轮本地训练轮数
+
+    # Non-IID 配置
+    "fed_use_noniid": True,  # 是否使用 Non-IID 数据划分
+    "fed_alpha": 0.5,        # Dirichlet 分布参数，越小 non-IID 程度越高
 
     # 增强版联邦学习配置
     "fed_ema_weight": 0.95,        # 指数移动平均权重
@@ -23,18 +27,12 @@ MODEL_CONFIG = {
     "fed_sample_ratio": 0.5,       # 客户端采样比例
     "fed_global_lr": 1.0,          # 全局学习率
 
-    # # MNIST
-    # "input_size": 784,    # 输入特征数（28×28像素的图像展平为一维向量）
-    # "hidden_size1": 256,  # 第一层隐藏层神经元数
-    # "hidden_size2": 128,  # 第二层隐藏层神经元数
-    # "output_size": 10,    # 输出类别数（手写数字0-9共10个类别）
-
     # CIFAR10
     "num_classes": 10,      # CIFAR-10有10个类别
     "pretrained": False,    # 是否使用预训练权重
     "epochs": 10,           # 训练轮次（完整遍历训练集的次数）
     "learning_rate": 0.01,  # 学习率（控制参数更新步长）
-    "optimizer": "Adam",    # 优化器类型（可选：Adam、SGD等）
+    "optimizer": "SGD",    # 优化器类型（可选：Adam、SGD等）
     "loss_function": "CrossEntropyLoss",  # 损失函数类型（适用于分类任务）
 
     # # CIFAR100
@@ -47,8 +45,8 @@ MODEL_CONFIG = {
 # 训练参数
 TRAIN_CONFIG = {
     "epochs": 5,          # 训练轮次（完整遍历训练集的次数）
-    "learning_rate": 0.001,  # 学习率（控制参数更新步长）
-    "optimizer": "Adam",  # 优化器类型（可选：Adam、SGD等）
+    "learning_rate": 0.01,  # 学习率（控制参数更新步长）
+    "optimizer": "SGD",  # 优化器类型（可选：Adam、SGD等）
     "loss_function": "CrossEntropyLoss",  # 损失函数类型（适用于分类任务）
 }
 

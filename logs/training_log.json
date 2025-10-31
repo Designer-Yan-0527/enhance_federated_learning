@@ -1,0 +1,4402 @@
+[
+  {
+    "round": 1,
+    "timestamp": "2025-10-31 14:54:15",
+    "global_metrics": {
+      "loss": 2.312829331987223,
+      "accuracy": 10.0,
+      "correct": 1000,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 3,
+        "average_loss": 1.8721519940429263,
+        "accuracy": 53.18021201413428,
+        "samples": 2264
+      },
+      {
+        "client_id": 1,
+        "average_loss": 2.2277988161359517,
+        "accuracy": 45.12471655328798,
+        "samples": 2205
+      },
+      {
+        "client_id": 4,
+        "average_loss": 1.9321002154438585,
+        "accuracy": 44.355890450659324,
+        "samples": 6901
+      },
+      {
+        "client_id": 9,
+        "average_loss": 1.9058829730318994,
+        "accuracy": 42.94003868471954,
+        "samples": 6204
+      },
+      {
+        "client_id": 0,
+        "average_loss": 1.8461739695261394,
+        "accuracy": 40.209397980805186,
+        "samples": 8023
+      }
+    ],
+    "elapsed_time": 10.425414085388184,
+    "noniid_effectiveness": 4.345303335754704
+  },
+  {
+    "round": 2,
+    "timestamp": "2025-10-31 14:54:27",
+    "global_metrics": {
+      "loss": 2.3292674031227256,
+      "accuracy": 10.0,
+      "correct": 1000,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 9,
+        "average_loss": 1.7888042668706363,
+        "accuracy": 43.488072211476464,
+        "samples": 6204
+      },
+      {
+        "client_id": 6,
+        "average_loss": 1.6118451939387755,
+        "accuracy": 44.545292756718275,
+        "samples": 5619
+      },
+      {
+        "client_id": 2,
+        "average_loss": 1.661981735229492,
+        "accuracy": 44.89956057752668,
+        "samples": 6372
+      },
+      {
+        "client_id": 4,
+        "average_loss": 1.6774109039041731,
+        "accuracy": 46.413563251702655,
+        "samples": 6901
+      },
+      {
+        "client_id": 8,
+        "average_loss": 1.7195989804447822,
+        "accuracy": 47.56908526673563,
+        "samples": 6767
+      }
+    ],
+    "elapsed_time": 22.780555963516235,
+    "noniid_effectiveness": 1.439947760695179
+  },
+  {
+    "round": 3,
+    "timestamp": "2025-10-31 14:54:37",
+    "global_metrics": {
+      "loss": 2.2877839203852757,
+      "accuracy": 12.93,
+      "correct": 1293,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 4,
+        "average_loss": 1.5413011577394273,
+        "accuracy": 49.195768729169686,
+        "samples": 6901
+      },
+      {
+        "client_id": 5,
+        "average_loss": 1.9354506072245146,
+        "accuracy": 55.54600171969046,
+        "samples": 1163
+      },
+      {
+        "client_id": 0,
+        "average_loss": 1.7844647462405856,
+        "accuracy": 40.23432631185342,
+        "samples": 8023
+      },
+      {
+        "client_id": 1,
+        "average_loss": 1.8724263054983956,
+        "accuracy": 46.12244897959184,
+        "samples": 2205
+      },
+      {
+        "client_id": 2,
+        "average_loss": 1.5745289361476897,
+        "accuracy": 48.79158819836786,
+        "samples": 6372
+      }
+    ],
+    "elapsed_time": 32.813244581222534,
+    "noniid_effectiveness": 4.956351243359337
+  },
+  {
+    "round": 4,
+    "timestamp": "2025-10-31 14:54:48",
+    "global_metrics": {
+      "loss": 2.1711409501968677,
+      "accuracy": 20.46,
+      "correct": 2046,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 1,
+        "average_loss": 1.7241953236716134,
+        "accuracy": 48.02721088435374,
+        "samples": 2205
+      },
+      {
+        "client_id": 4,
+        "average_loss": 1.458215273088879,
+        "accuracy": 50.326039704390666,
+        "samples": 6901
+      },
+      {
+        "client_id": 9,
+        "average_loss": 1.5393708612501007,
+        "accuracy": 47.54996776273372,
+        "samples": 6204
+      },
+      {
+        "client_id": 7,
+        "average_loss": 1.8005540915897915,
+        "accuracy": 43.73744139316812,
+        "samples": 4479
+      },
+      {
+        "client_id": 8,
+        "average_loss": 1.6608226321778208,
+        "accuracy": 47.92374759864046,
+        "samples": 6767
+      }
+    ],
+    "elapsed_time": 43.33400297164917,
+    "noniid_effectiveness": 2.1261480729577857
+  },
+  {
+    "round": 5,
+    "timestamp": "2025-10-31 14:54:59",
+    "global_metrics": {
+      "loss": 2.0765310897948637,
+      "accuracy": 22.32,
+      "correct": 2232,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 1,
+        "average_loss": 1.7008939640862601,
+        "accuracy": 46.21315192743764,
+        "samples": 2205
+      },
+      {
+        "client_id": 9,
+        "average_loss": 1.5853048182025398,
+        "accuracy": 47.72727272727273,
+        "samples": 6204
+      },
+      {
+        "client_id": 4,
+        "average_loss": 1.4057962121786896,
+        "accuracy": 50.96362845964353,
+        "samples": 6901
+      },
+      {
+        "client_id": 0,
+        "average_loss": 1.426380057183523,
+        "accuracy": 51.526860276704475,
+        "samples": 8023
+      },
+      {
+        "client_id": 7,
+        "average_loss": 1.6922386356762478,
+        "accuracy": 48.22505023442733,
+        "samples": 4479
+      }
+    ],
+    "elapsed_time": 54.180758476257324,
+    "noniid_effectiveness": 2.0101786691516117
+  },
+  {
+    "round": 6,
+    "timestamp": "2025-10-31 14:55:10",
+    "global_metrics": {
+      "loss": 2.0277040559015456,
+      "accuracy": 21.79,
+      "correct": 2179,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 6,
+        "average_loss": 1.3941745879975231,
+        "accuracy": 50.98772023491725,
+        "samples": 5619
+      },
+      {
+        "client_id": 9,
+        "average_loss": 1.4517758703723396,
+        "accuracy": 50.90264345583495,
+        "samples": 6204
+      },
+      {
+        "client_id": 4,
+        "average_loss": 1.3302817775143518,
+        "accuracy": 53.76032459063904,
+        "samples": 6901
+      },
+      {
+        "client_id": 0,
+        "average_loss": 1.3376496732234955,
+        "accuracy": 54.19419169886576,
+        "samples": 8023
+      },
+      {
+        "client_id": 3,
+        "average_loss": 1.4322757985856798,
+        "accuracy": 56.71378091872791,
+        "samples": 2264
+      }
+    ],
+    "elapsed_time": 65.39903545379639,
+    "noniid_effectiveness": 2.179846121898811
+  },
+  {
+    "round": 7,
+    "timestamp": "2025-10-31 14:55:26",
+    "global_metrics": {
+      "loss": 1.906302214428118,
+      "accuracy": 30.46,
+      "correct": 3046,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 7,
+        "average_loss": 1.4023045556885856,
+        "accuracy": 53.382451440053586,
+        "samples": 4479
+      },
+      {
+        "client_id": 2,
+        "average_loss": 1.3274523556232452,
+        "accuracy": 55.33584431889517,
+        "samples": 6372
+      },
+      {
+        "client_id": 6,
+        "average_loss": 1.3168175633658061,
+        "accuracy": 54.51147891083823,
+        "samples": 5619
+      },
+      {
+        "client_id": 4,
+        "average_loss": 1.3060707361609847,
+        "accuracy": 53.74583393711056,
+        "samples": 6901
+      },
+      {
+        "client_id": 9,
+        "average_loss": 1.3701509839480686,
+        "accuracy": 52.59509993552547,
+        "samples": 6204
+      }
+    ],
+    "elapsed_time": 81.65752673149109,
+    "noniid_effectiveness": 0.9411634599817608
+  },
+  {
+    "round": 8,
+    "timestamp": "2025-10-31 14:55:42",
+    "global_metrics": {
+      "loss": 2.0786631995705283,
+      "accuracy": 24.32,
+      "correct": 2432,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 3,
+        "average_loss": 1.2674135499530368,
+        "accuracy": 58.303886925795055,
+        "samples": 2264
+      },
+      {
+        "client_id": 6,
+        "average_loss": 1.2435491694645449,
+        "accuracy": 56.21996796583022,
+        "samples": 5619
+      },
+      {
+        "client_id": 2,
+        "average_loss": 1.2543325126171112,
+        "accuracy": 58.61581920903955,
+        "samples": 6372
+      },
+      {
+        "client_id": 7,
+        "average_loss": 1.4066500851086208,
+        "accuracy": 52.42241571779415,
+        "samples": 4479
+      },
+      {
+        "client_id": 0,
+        "average_loss": 1.2816818507890853,
+        "accuracy": 54.929577464788736,
+        "samples": 8023
+      }
+    ],
+    "elapsed_time": 97.11588311195374,
+    "noniid_effectiveness": 2.2845287200607647
+  },
+  {
+    "round": 9,
+    "timestamp": "2025-10-31 14:55:53",
+    "global_metrics": {
+      "loss": 1.927166199987861,
+      "accuracy": 27.25,
+      "correct": 2725,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 2,
+        "average_loss": 1.3279870241880416,
+        "accuracy": 56.52856246076585,
+        "samples": 6372
+      },
+      {
+        "client_id": 1,
+        "average_loss": 1.517130376611437,
+        "accuracy": 48.843537414965986,
+        "samples": 2205
+      },
+      {
+        "client_id": 0,
+        "average_loss": 1.187722980503052,
+        "accuracy": 59.06768041879596,
+        "samples": 8023
+      },
+      {
+        "client_id": 7,
+        "average_loss": 1.4654452349458422,
+        "accuracy": 50.12279526680062,
+        "samples": 4479
+      },
+      {
+        "client_id": 5,
+        "average_loss": 1.531221236053266,
+        "accuracy": 53.654342218400686,
+        "samples": 1163
+      }
+    ],
+    "elapsed_time": 108.44503974914551,
+    "noniid_effectiveness": 3.8257140180670186
+  },
+  {
+    "round": 10,
+    "timestamp": "2025-10-31 14:56:07",
+    "global_metrics": {
+      "loss": 1.895311226510698,
+      "accuracy": 25.06,
+      "correct": 2506,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 6,
+        "average_loss": 1.2539868327704342,
+        "accuracy": 56.504716141662215,
+        "samples": 5619
+      },
+      {
+        "client_id": 5,
+        "average_loss": 1.0922527752424542,
+        "accuracy": 66.12209802235597,
+        "samples": 1163
+      },
+      {
+        "client_id": 0,
+        "average_loss": 1.1905745159065912,
+        "accuracy": 58.24504549420416,
+        "samples": 8023
+      },
+      {
+        "client_id": 4,
+        "average_loss": 1.2538984417915344,
+        "accuracy": 55.33980582524272,
+        "samples": 6901
+      },
+      {
+        "client_id": 3,
+        "average_loss": 1.4646598663594987,
+        "accuracy": 52.29681978798587,
+        "samples": 2264
+      }
+    ],
+    "elapsed_time": 122.7254991531372,
+    "noniid_effectiveness": 4.635134771223388
+  },
+  {
+    "round": 11,
+    "timestamp": "2025-10-31 14:56:17",
+    "global_metrics": {
+      "loss": 1.7443534037110153,
+      "accuracy": 36.49,
+      "correct": 3649,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 5,
+        "average_loss": 1.3837831302693016,
+        "accuracy": 57.523645743766124,
+        "samples": 1163
+      },
+      {
+        "client_id": 3,
+        "average_loss": 1.2314445525407791,
+        "accuracy": 58.56890459363957,
+        "samples": 2264
+      },
+      {
+        "client_id": 9,
+        "average_loss": 1.2692966381299127,
+        "accuracy": 54.93230174081238,
+        "samples": 6204
+      },
+      {
+        "client_id": 6,
+        "average_loss": 1.1648789115927436,
+        "accuracy": 58.586937177433704,
+        "samples": 5619
+      },
+      {
+        "client_id": 7,
+        "average_loss": 1.247663791690554,
+        "accuracy": 56.77606608617995,
+        "samples": 4479
+      }
+    ],
+    "elapsed_time": 132.05077695846558,
+    "noniid_effectiveness": 1.3560479411042294
+  },
+  {
+    "round": 12,
+    "timestamp": "2025-10-31 14:56:28",
+    "global_metrics": {
+      "loss": 1.7905072262332697,
+      "accuracy": 34.92,
+      "correct": 3492,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 4,
+        "average_loss": 1.1868033591243956,
+        "accuracy": 57.440950586871466,
+        "samples": 6901
+      },
+      {
+        "client_id": 5,
+        "average_loss": 1.018719754720989,
+        "accuracy": 68.87360275150473,
+        "samples": 1163
+      },
+      {
+        "client_id": 9,
+        "average_loss": 1.238856745134924,
+        "accuracy": 57.011605415860735,
+        "samples": 6204
+      },
+      {
+        "client_id": 8,
+        "average_loss": 1.2477637023295995,
+        "accuracy": 56.99719225653909,
+        "samples": 6767
+      },
+      {
+        "client_id": 1,
+        "average_loss": 1.385318970680237,
+        "accuracy": 53.92290249433107,
+        "samples": 2205
+      }
+    ],
+    "elapsed_time": 143.6971127986908,
+    "noniid_effectiveness": 5.16811204547573
+  },
+  {
+    "round": 13,
+    "timestamp": "2025-10-31 14:56:41",
+    "global_metrics": {
+      "loss": 1.887128547498375,
+      "accuracy": 34.4,
+      "correct": 3440,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 1,
+        "average_loss": 1.263621199131012,
+        "accuracy": 55.91836734693877,
+        "samples": 2205
+      },
+      {
+        "client_id": 0,
+        "average_loss": 1.186663557139654,
+        "accuracy": 58.357222983921226,
+        "samples": 8023
+      },
+      {
+        "client_id": 6,
+        "average_loss": 1.1561372584917329,
+        "accuracy": 59.8327104466987,
+        "samples": 5619
+      },
+      {
+        "client_id": 9,
+        "average_loss": 1.2615364458143097,
+        "accuracy": 55.54480980012895,
+        "samples": 6204
+      },
+      {
+        "client_id": 5,
+        "average_loss": 1.0323076812844527,
+        "accuracy": 68.70163370593293,
+        "samples": 1163
+      }
+    ],
+    "elapsed_time": 156.10664796829224,
+    "noniid_effectiveness": 4.783559403384375
+  },
+  {
+    "round": 14,
+    "timestamp": "2025-10-31 14:56:53",
+    "global_metrics": {
+      "loss": 1.7476221087631907,
+      "accuracy": 32.93,
+      "correct": 3293,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 8,
+        "average_loss": 1.2407729552601867,
+        "accuracy": 57.57351854588444,
+        "samples": 6767
+      },
+      {
+        "client_id": 5,
+        "average_loss": 1.1148971570165533,
+        "accuracy": 65.43422184006879,
+        "samples": 1163
+      },
+      {
+        "client_id": 7,
+        "average_loss": 1.178053858450481,
+        "accuracy": 60.258986380888594,
+        "samples": 4479
+      },
+      {
+        "client_id": 6,
+        "average_loss": 1.114941736513918,
+        "accuracy": 60.84712582310019,
+        "samples": 5619
+      },
+      {
+        "client_id": 2,
+        "average_loss": 1.2504569512605668,
+        "accuracy": 58.55304456999372,
+        "samples": 6372
+      }
+    ],
+    "elapsed_time": 168.6135003566742,
+    "noniid_effectiveness": 2.7156762430004906
+  },
+  {
+    "round": 15,
+    "timestamp": "2025-10-31 14:57:03",
+    "global_metrics": {
+      "loss": 1.659429931336907,
+      "accuracy": 38.17,
+      "correct": 3817,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 7,
+        "average_loss": 1.1397973111697606,
+        "accuracy": 60.392944853762,
+        "samples": 4479
+      },
+      {
+        "client_id": 8,
+        "average_loss": 1.123151663901671,
+        "accuracy": 61.44524900251219,
+        "samples": 6767
+      },
+      {
+        "client_id": 5,
+        "average_loss": 0.9385049405850863,
+        "accuracy": 70.33533963886501,
+        "samples": 1163
+      },
+      {
+        "client_id": 2,
+        "average_loss": 1.1547659438848497,
+        "accuracy": 60.49905838041431,
+        "samples": 6372
+      },
+      {
+        "client_id": 4,
+        "average_loss": 1.1167062807966162,
+        "accuracy": 59.600057962614116,
+        "samples": 6901
+      }
+    ],
+    "elapsed_time": 178.73674416542053,
+    "noniid_effectiveness": 3.9836621814187443
+  },
+  {
+    "round": 16,
+    "timestamp": "2025-10-31 14:57:15",
+    "global_metrics": {
+      "loss": 1.7520255442637547,
+      "accuracy": 34.47,
+      "correct": 3447,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 0,
+        "average_loss": 1.0951086840932331,
+        "accuracy": 61.897045992770785,
+        "samples": 8023
+      },
+      {
+        "client_id": 2,
+        "average_loss": 1.1690162372589112,
+        "accuracy": 60.09102322661645,
+        "samples": 6372
+      },
+      {
+        "client_id": 9,
+        "average_loss": 1.2407556729218394,
+        "accuracy": 57.543520309477756,
+        "samples": 6204
+      },
+      {
+        "client_id": 3,
+        "average_loss": 1.2503826088375516,
+        "accuracy": 55.477031802120145,
+        "samples": 2264
+      },
+      {
+        "client_id": 4,
+        "average_loss": 1.0697487040802285,
+        "accuracy": 62.52716997536589,
+        "samples": 6901
+      }
+    ],
+    "elapsed_time": 190.32637977600098,
+    "noniid_effectiveness": 2.655964069887691
+  },
+  {
+    "round": 17,
+    "timestamp": "2025-10-31 14:57:24",
+    "global_metrics": {
+      "loss": 1.8869121249314327,
+      "accuracy": 35.03,
+      "correct": 3503,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 6,
+        "average_loss": 1.1534249714829705,
+        "accuracy": 60.7403452571632,
+        "samples": 5619
+      },
+      {
+        "client_id": 5,
+        "average_loss": 1.6526601094948619,
+        "accuracy": 46.603611349957006,
+        "samples": 1163
+      },
+      {
+        "client_id": 9,
+        "average_loss": 1.1825500050770867,
+        "accuracy": 58.65570599613153,
+        "samples": 6204
+      },
+      {
+        "client_id": 1,
+        "average_loss": 1.4419256040028163,
+        "accuracy": 52.018140589569164,
+        "samples": 2205
+      },
+      {
+        "client_id": 8,
+        "average_loss": 1.2188773807489648,
+        "accuracy": 57.95773607211468,
+        "samples": 6767
+      }
+    ],
+    "elapsed_time": 199.32820320129395,
+    "noniid_effectiveness": 5.181977329331652
+  },
+  {
+    "round": 18,
+    "timestamp": "2025-10-31 14:57:36",
+    "global_metrics": {
+      "loss": 1.650943028699061,
+      "accuracy": 38.11,
+      "correct": 3811,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 6,
+        "average_loss": 1.0801104747436263,
+        "accuracy": 63.249688556682685,
+        "samples": 5619
+      },
+      {
+        "client_id": 4,
+        "average_loss": 1.1314069573526029,
+        "accuracy": 59.889871033183596,
+        "samples": 6901
+      },
+      {
+        "client_id": 2,
+        "average_loss": 1.3202510875463487,
+        "accuracy": 56.29315756434401,
+        "samples": 6372
+      },
+      {
+        "client_id": 8,
+        "average_loss": 1.1325200874850434,
+        "accuracy": 61.903354514555936,
+        "samples": 6767
+      },
+      {
+        "client_id": 7,
+        "average_loss": 1.2258693311895643,
+        "accuracy": 59.05336012502791,
+        "samples": 4479
+      }
+    ],
+    "elapsed_time": 211.31867361068726,
+    "noniid_effectiveness": 2.400076623114795
+  },
+  {
+    "round": 19,
+    "timestamp": "2025-10-31 14:57:47",
+    "global_metrics": {
+      "loss": 1.5798188182199078,
+      "accuracy": 41.29,
+      "correct": 4129,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 3,
+        "average_loss": 1.1400636815362506,
+        "accuracy": 57.773851590106005,
+        "samples": 2264
+      },
+      {
+        "client_id": 0,
+        "average_loss": 1.0820398363802168,
+        "accuracy": 62.33329178611492,
+        "samples": 8023
+      },
+      {
+        "client_id": 8,
+        "average_loss": 1.1009220998242217,
+        "accuracy": 61.72602334860352,
+        "samples": 6767
+      },
+      {
+        "client_id": 7,
+        "average_loss": 1.127514159679413,
+        "accuracy": 61.442286224603706,
+        "samples": 4479
+      },
+      {
+        "client_id": 6,
+        "average_loss": 1.0712098174474456,
+        "accuracy": 62.87595657590319,
+        "samples": 5619
+      }
+    ],
+    "elapsed_time": 222.06317234039307,
+    "noniid_effectiveness": 1.7979150064696827
+  },
+  {
+    "round": 20,
+    "timestamp": "2025-10-31 14:57:57",
+    "global_metrics": {
+      "loss": 1.4432537335499076,
+      "accuracy": 44.69,
+      "correct": 4469,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 8,
+        "average_loss": 1.0992922119374544,
+        "accuracy": 61.903354514555936,
+        "samples": 6767
+      },
+      {
+        "client_id": 0,
+        "average_loss": 1.022931599900836,
+        "accuracy": 64.43973575969089,
+        "samples": 8023
+      },
+      {
+        "client_id": 7,
+        "average_loss": 1.0458441546985082,
+        "accuracy": 64.1214556820719,
+        "samples": 4479
+      },
+      {
+        "client_id": 2,
+        "average_loss": 1.1357077765464783,
+        "accuracy": 61.95856873822976,
+        "samples": 6372
+      },
+      {
+        "client_id": 3,
+        "average_loss": 1.1809790763590071,
+        "accuracy": 58.25971731448763,
+        "samples": 2264
+      }
+    ],
+    "elapsed_time": 232.8117218017578,
+    "noniid_effectiveness": 2.207279064570177
+  },
+  {
+    "round": 21,
+    "timestamp": "2025-10-31 14:58:08",
+    "global_metrics": {
+      "loss": 1.5843194943324777,
+      "accuracy": 37.1,
+      "correct": 3710,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 2,
+        "average_loss": 1.0423941153287888,
+        "accuracy": 64.50094161958569,
+        "samples": 6372
+      },
+      {
+        "client_id": 6,
+        "average_loss": 1.0716107745062222,
+        "accuracy": 63.33867236163018,
+        "samples": 5619
+      },
+      {
+        "client_id": 8,
+        "average_loss": 1.0867421548321563,
+        "accuracy": 62.450125609575885,
+        "samples": 6767
+      },
+      {
+        "client_id": 9,
+        "average_loss": 1.132541240490589,
+        "accuracy": 60.94455190199871,
+        "samples": 6204
+      },
+      {
+        "client_id": 3,
+        "average_loss": 1.0911362767219543,
+        "accuracy": 61.17491166077738,
+        "samples": 2264
+      }
+    ],
+    "elapsed_time": 243.3094825744629,
+    "noniid_effectiveness": 1.3329107418599273
+  },
+  {
+    "round": 22,
+    "timestamp": "2025-10-31 14:58:16",
+    "global_metrics": {
+      "loss": 1.558343754452505,
+      "accuracy": 40.02,
+      "correct": 4002,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 3,
+        "average_loss": 0.9936196290784411,
+        "accuracy": 64.31095406360424,
+        "samples": 2264
+      },
+      {
+        "client_id": 8,
+        "average_loss": 1.1846886895737558,
+        "accuracy": 59.74582532880154,
+        "samples": 6767
+      },
+      {
+        "client_id": 1,
+        "average_loss": 1.2061340604509627,
+        "accuracy": 59.27437641723356,
+        "samples": 2205
+      },
+      {
+        "client_id": 5,
+        "average_loss": 1.0446727197421224,
+        "accuracy": 67.23989681857266,
+        "samples": 1163
+      },
+      {
+        "client_id": 0,
+        "average_loss": 1.0095317193440028,
+        "accuracy": 64.6516265736009,
+        "samples": 8023
+      }
+    ],
+    "elapsed_time": 251.7899570465088,
+    "noniid_effectiveness": 3.062130062338918
+  },
+  {
+    "round": 23,
+    "timestamp": "2025-10-31 14:58:26",
+    "global_metrics": {
+      "loss": 1.5470649292514582,
+      "accuracy": 41.86,
+      "correct": 4186,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 9,
+        "average_loss": 1.1259519039970083,
+        "accuracy": 61.37975499677627,
+        "samples": 6204
+      },
+      {
+        "client_id": 3,
+        "average_loss": 1.182664112912284,
+        "accuracy": 57.332155477031804,
+        "samples": 2264
+      },
+      {
+        "client_id": 4,
+        "average_loss": 1.08699332177639,
+        "accuracy": 62.3532821330242,
+        "samples": 6901
+      },
+      {
+        "client_id": 5,
+        "average_loss": 0.9060603317461515,
+        "accuracy": 74.37661220980223,
+        "samples": 1163
+      },
+      {
+        "client_id": 2,
+        "average_loss": 1.1042742216587067,
+        "accuracy": 61.98995605775267,
+        "samples": 6372
+      }
+    ],
+    "elapsed_time": 261.2982666492462,
+    "noniid_effectiveness": 5.734678741724412
+  },
+  {
+    "round": 24,
+    "timestamp": "2025-10-31 14:58:36",
+    "global_metrics": {
+      "loss": 1.7645853864159553,
+      "accuracy": 36.68,
+      "correct": 3668,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 7,
+        "average_loss": 1.4935862243175506,
+        "accuracy": 54.87832105380665,
+        "samples": 4479
+      },
+      {
+        "client_id": 2,
+        "average_loss": 0.9938256931304932,
+        "accuracy": 66.2586315128688,
+        "samples": 6372
+      },
+      {
+        "client_id": 6,
+        "average_loss": 1.018050727519122,
+        "accuracy": 64.60224239188467,
+        "samples": 5619
+      },
+      {
+        "client_id": 5,
+        "average_loss": 1.6139303351703442,
+        "accuracy": 50.300945829750646,
+        "samples": 1163
+      },
+      {
+        "client_id": 0,
+        "average_loss": 1.057505764658489,
+        "accuracy": 62.89417923470024,
+        "samples": 8023
+      }
+    ],
+    "elapsed_time": 271.6669821739197,
+    "noniid_effectiveness": 6.144973379157072
+  },
+  {
+    "round": 25,
+    "timestamp": "2025-10-31 14:58:43",
+    "global_metrics": {
+      "loss": 1.4030091253815182,
+      "accuracy": 47.3,
+      "correct": 4730,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 1,
+        "average_loss": 1.2906674470220294,
+        "accuracy": 56.78004535147392,
+        "samples": 2205
+      },
+      {
+        "client_id": 2,
+        "average_loss": 1.071258943080902,
+        "accuracy": 64.15568110483365,
+        "samples": 6372
+      },
+      {
+        "client_id": 3,
+        "average_loss": 1.2300397008657455,
+        "accuracy": 56.18374558303887,
+        "samples": 2264
+      },
+      {
+        "client_id": 7,
+        "average_loss": 1.0659491096224103,
+        "accuracy": 63.85353873632507,
+        "samples": 4479
+      },
+      {
+        "client_id": 5,
+        "average_loss": 1.1978218273112649,
+        "accuracy": 61.564918314703355,
+        "samples": 1163
+      }
+    ],
+    "elapsed_time": 278.9693624973297,
+    "noniid_effectiveness": 3.4120991916739185
+  },
+  {
+    "round": 26,
+    "timestamp": "2025-10-31 14:58:52",
+    "global_metrics": {
+      "loss": 1.5633306245135654,
+      "accuracy": 43.99,
+      "correct": 4399,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 6,
+        "average_loss": 1.0292305648326874,
+        "accuracy": 64.12172984516818,
+        "samples": 5619
+      },
+      {
+        "client_id": 8,
+        "average_loss": 1.0113905128443017,
+        "accuracy": 64.44510122654056,
+        "samples": 6767
+      },
+      {
+        "client_id": 9,
+        "average_loss": 1.0790354670937528,
+        "accuracy": 62.121212121212125,
+        "samples": 6204
+      },
+      {
+        "client_id": 3,
+        "average_loss": 1.0463531497451994,
+        "accuracy": 63.56007067137809,
+        "samples": 2264
+      },
+      {
+        "client_id": 5,
+        "average_loss": 0.8797829158996281,
+        "accuracy": 70.16337059329321,
+        "samples": 1163
+      }
+    ],
+    "elapsed_time": 287.97477984428406,
+    "noniid_effectiveness": 2.757941732926589
+  },
+  {
+    "round": 27,
+    "timestamp": "2025-10-31 14:59:03",
+    "global_metrics": {
+      "loss": 1.432492755780554,
+      "accuracy": 49.55,
+      "correct": 4955,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 9,
+        "average_loss": 1.0656125121509905,
+        "accuracy": 63.152804642166345,
+        "samples": 6204
+      },
+      {
+        "client_id": 6,
+        "average_loss": 0.9477406631816517,
+        "accuracy": 67.53870795515216,
+        "samples": 5619
+      },
+      {
+        "client_id": 7,
+        "average_loss": 0.999844422510692,
+        "accuracy": 65.92989506586292,
+        "samples": 4479
+      },
+      {
+        "client_id": 3,
+        "average_loss": 1.0723691797918744,
+        "accuracy": 60.909893992932865,
+        "samples": 2264
+      },
+      {
+        "client_id": 8,
+        "average_loss": 0.9797078179863264,
+        "accuracy": 65.44997783360425,
+        "samples": 6767
+      }
+    ],
+    "elapsed_time": 298.1712474822998,
+    "noniid_effectiveness": 2.3168199889126875
+  },
+  {
+    "round": 28,
+    "timestamp": "2025-10-31 14:59:13",
+    "global_metrics": {
+      "loss": 1.4186501578920205,
+      "accuracy": 46.53,
+      "correct": 4653,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 1,
+        "average_loss": 1.1783531870160784,
+        "accuracy": 61.54195011337868,
+        "samples": 2205
+      },
+      {
+        "client_id": 0,
+        "average_loss": 1.0930556706965915,
+        "accuracy": 61.94690265486726,
+        "samples": 8023
+      },
+      {
+        "client_id": 7,
+        "average_loss": 0.9481145296777997,
+        "accuracy": 67.02388926099576,
+        "samples": 4479
+      },
+      {
+        "client_id": 9,
+        "average_loss": 1.013619883773253,
+        "accuracy": 65.34493874919407,
+        "samples": 6204
+      },
+      {
+        "client_id": 2,
+        "average_loss": 0.999671327471733,
+        "accuracy": 66.2586315128688,
+        "samples": 6372
+      }
+    ],
+    "elapsed_time": 308.93019938468933,
+    "noniid_effectiveness": 2.254579571610549
+  },
+  {
+    "round": 29,
+    "timestamp": "2025-10-31 14:59:22",
+    "global_metrics": {
+      "loss": 1.3834386228755782,
+      "accuracy": 50.62,
+      "correct": 5062,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 3,
+        "average_loss": 1.0723328689734142,
+        "accuracy": 62.41166077738516,
+        "samples": 2264
+      },
+      {
+        "client_id": 4,
+        "average_loss": 0.9636556539270613,
+        "accuracy": 66.20779597159832,
+        "samples": 6901
+      },
+      {
+        "client_id": 5,
+        "average_loss": 1.0673780692251105,
+        "accuracy": 62.94067067927773,
+        "samples": 1163
+      },
+      {
+        "client_id": 9,
+        "average_loss": 1.0342539567308329,
+        "accuracy": 65.08704061895551,
+        "samples": 6204
+      },
+      {
+        "client_id": 7,
+        "average_loss": 0.9684625250952584,
+        "accuracy": 66.2201384237553,
+        "samples": 4479
+      }
+    ],
+    "elapsed_time": 317.71594643592834,
+    "noniid_effectiveness": 1.6115672990131458
+  },
+  {
+    "round": 30,
+    "timestamp": "2025-10-31 14:59:31",
+    "global_metrics": {
+      "loss": 1.3614423609083626,
+      "accuracy": 50.34,
+      "correct": 5034,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 3,
+        "average_loss": 0.999350153737598,
+        "accuracy": 65.85689045936395,
+        "samples": 2264
+      },
+      {
+        "client_id": 6,
+        "average_loss": 0.9523563357916746,
+        "accuracy": 66.79124399359317,
+        "samples": 5619
+      },
+      {
+        "client_id": 5,
+        "average_loss": 0.8005724831631309,
+        "accuracy": 74.03267411865865,
+        "samples": 1163
+      },
+      {
+        "client_id": 7,
+        "average_loss": 0.9443925627640315,
+        "accuracy": 67.84996651038178,
+        "samples": 4479
+      },
+      {
+        "client_id": 2,
+        "average_loss": 0.9624252915382385,
+        "accuracy": 68.0947897049592,
+        "samples": 6372
+      }
+    ],
+    "elapsed_time": 326.18253803253174,
+    "noniid_effectiveness": 2.8670522720800036
+  },
+  {
+    "round": 31,
+    "timestamp": "2025-10-31 14:59:41",
+    "global_metrics": {
+      "loss": 1.2950382061824677,
+      "accuracy": 50.53,
+      "correct": 5053,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 7,
+        "average_loss": 0.9908141808850425,
+        "accuracy": 66.82295155168565,
+        "samples": 4479
+      },
+      {
+        "client_id": 0,
+        "average_loss": 0.9167529727731433,
+        "accuracy": 67.59316963729279,
+        "samples": 8023
+      },
+      {
+        "client_id": 5,
+        "average_loss": 0.9170102822153192,
+        "accuracy": 68.27171109200344,
+        "samples": 1163
+      },
+      {
+        "client_id": 4,
+        "average_loss": 0.9116652806599935,
+        "accuracy": 69.04796406317925,
+        "samples": 6901
+      },
+      {
+        "client_id": 9,
+        "average_loss": 1.026793189884461,
+        "accuracy": 64.03932946486138,
+        "samples": 6204
+      }
+    ],
+    "elapsed_time": 336.96600914001465,
+    "noniid_effectiveness": 1.7227889186392085
+  },
+  {
+    "round": 32,
+    "timestamp": "2025-10-31 14:59:52",
+    "global_metrics": {
+      "loss": 1.3703549978839364,
+      "accuracy": 51.46,
+      "correct": 5146,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 4,
+        "average_loss": 0.8769391686828049,
+        "accuracy": 70.04781915664397,
+        "samples": 6901
+      },
+      {
+        "client_id": 2,
+        "average_loss": 0.9756354463100433,
+        "accuracy": 67.41996233521657,
+        "samples": 6372
+      },
+      {
+        "client_id": 5,
+        "average_loss": 0.8441435694694519,
+        "accuracy": 72.48495270851247,
+        "samples": 1163
+      },
+      {
+        "client_id": 8,
+        "average_loss": 0.9160977225258665,
+        "accuracy": 67.97694694842619,
+        "samples": 6767
+      },
+      {
+        "client_id": 9,
+        "average_loss": 0.9654527478611347,
+        "accuracy": 66.60219213410703,
+        "samples": 6204
+      }
+    ],
+    "elapsed_time": 347.6769845485687,
+    "noniid_effectiveness": 2.1209257870634715
+  },
+  {
+    "round": 33,
+    "timestamp": "2025-10-31 15:00:02",
+    "global_metrics": {
+      "loss": 1.3955844925467376,
+      "accuracy": 54.5,
+      "correct": 5450,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 5,
+        "average_loss": 0.751747256831119,
+        "accuracy": 75.15047291487532,
+        "samples": 1163
+      },
+      {
+        "client_id": 8,
+        "average_loss": 0.8926691851525936,
+        "accuracy": 68.56805083493424,
+        "samples": 6767
+      },
+      {
+        "client_id": 4,
+        "average_loss": 0.8466649248644158,
+        "accuracy": 71.51137516301985,
+        "samples": 6901
+      },
+      {
+        "client_id": 3,
+        "average_loss": 1.0195948978265126,
+        "accuracy": 64.97349823321555,
+        "samples": 2264
+      },
+      {
+        "client_id": 2,
+        "average_loss": 0.9425635182857514,
+        "accuracy": 68.45574387947269,
+        "samples": 6372
+      }
+    ],
+    "elapsed_time": 357.0258822441101,
+    "noniid_effectiveness": 3.4103656977213856
+  },
+  {
+    "round": 34,
+    "timestamp": "2025-10-31 15:00:08",
+    "global_metrics": {
+      "loss": 1.5131744624702794,
+      "accuracy": 50.67,
+      "correct": 5067,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 1,
+        "average_loss": 1.117454935823168,
+        "accuracy": 61.904761904761905,
+        "samples": 2205
+      },
+      {
+        "client_id": 6,
+        "average_loss": 0.9139096438884735,
+        "accuracy": 67.87684641395266,
+        "samples": 5619
+      },
+      {
+        "client_id": 7,
+        "average_loss": 0.9399958559444972,
+        "accuracy": 68.29649475329315,
+        "samples": 4479
+      },
+      {
+        "client_id": 3,
+        "average_loss": 0.903312721186214,
+        "accuracy": 70.62720848056537,
+        "samples": 2264
+      },
+      {
+        "client_id": 5,
+        "average_loss": 0.8839862001569647,
+        "accuracy": 71.88306104901118,
+        "samples": 1163
+      }
+    ],
+    "elapsed_time": 363.7931480407715,
+    "noniid_effectiveness": 3.439946349266854
+  },
+  {
+    "round": 35,
+    "timestamp": "2025-10-31 15:00:18",
+    "global_metrics": {
+      "loss": 1.6806420998968137,
+      "accuracy": 46.38,
+      "correct": 4638,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 2,
+        "average_loss": 0.9171737551689148,
+        "accuracy": 68.706842435656,
+        "samples": 6372
+      },
+      {
+        "client_id": 1,
+        "average_loss": 1.0359021646635873,
+        "accuracy": 64.71655328798185,
+        "samples": 2205
+      },
+      {
+        "client_id": 3,
+        "average_loss": 0.9784588830338584,
+        "accuracy": 66.43109540636043,
+        "samples": 2264
+      },
+      {
+        "client_id": 0,
+        "average_loss": 0.8812216577075777,
+        "accuracy": 69.40047363828991,
+        "samples": 8023
+      },
+      {
+        "client_id": 6,
+        "average_loss": 0.8880629180507227,
+        "accuracy": 68.92685531233316,
+        "samples": 5619
+      }
+    ],
+    "elapsed_time": 373.6646842956543,
+    "noniid_effectiveness": 1.783330687289885
+  },
+  {
+    "round": 36,
+    "timestamp": "2025-10-31 15:00:29",
+    "global_metrics": {
+      "loss": 2.104420636110245,
+      "accuracy": 47.45,
+      "correct": 4745,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 0,
+        "average_loss": 0.8638908011572701,
+        "accuracy": 69.48772279695875,
+        "samples": 8023
+      },
+      {
+        "client_id": 5,
+        "average_loss": 1.4025784605427791,
+        "accuracy": 52.9664660361135,
+        "samples": 1163
+      },
+      {
+        "client_id": 8,
+        "average_loss": 0.9166698703226054,
+        "accuracy": 67.90305896261268,
+        "samples": 6767
+      },
+      {
+        "client_id": 6,
+        "average_loss": 0.8656027906320312,
+        "accuracy": 69.76330307883966,
+        "samples": 5619
+      },
+      {
+        "client_id": 7,
+        "average_loss": 0.98557260121618,
+        "accuracy": 65.92989506586292,
+        "samples": 4479
+      }
+    ],
+    "elapsed_time": 384.13987612724304,
+    "noniid_effectiveness": 6.2722630783860325
+  },
+  {
+    "round": 37,
+    "timestamp": "2025-10-31 15:00:39",
+    "global_metrics": {
+      "loss": 1.4811654508493508,
+      "accuracy": 53.95,
+      "correct": 5395,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 3,
+        "average_loss": 1.211721380551656,
+        "accuracy": 61.39575971731449,
+        "samples": 2264
+      },
+      {
+        "client_id": 9,
+        "average_loss": 0.9433310124063,
+        "accuracy": 67.7143778207608,
+        "samples": 6204
+      },
+      {
+        "client_id": 4,
+        "average_loss": 0.9003176280745754,
+        "accuracy": 69.32328648022026,
+        "samples": 6901
+      },
+      {
+        "client_id": 8,
+        "average_loss": 0.86305684975858,
+        "accuracy": 70.65169203487513,
+        "samples": 6767
+      },
+      {
+        "client_id": 1,
+        "average_loss": 1.148945677280426,
+        "accuracy": 61.63265306122449,
+        "samples": 2205
+      }
+    ],
+    "elapsed_time": 394.08598709106445,
+    "noniid_effectiveness": 3.8933603093798514
+  },
+  {
+    "round": 38,
+    "timestamp": "2025-10-31 15:00:49",
+    "global_metrics": {
+      "loss": 1.365830116211229,
+      "accuracy": 51.49,
+      "correct": 5149,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 1,
+        "average_loss": 1.0087137903485979,
+        "accuracy": 64.76190476190476,
+        "samples": 2205
+      },
+      {
+        "client_id": 8,
+        "average_loss": 0.8748179617917763,
+        "accuracy": 69.75025860795034,
+        "samples": 6767
+      },
+      {
+        "client_id": 6,
+        "average_loss": 0.8662991022521799,
+        "accuracy": 69.76330307883966,
+        "samples": 5619
+      },
+      {
+        "client_id": 4,
+        "average_loss": 0.8320217005632542,
+        "accuracy": 72.06201999710187,
+        "samples": 6901
+      },
+      {
+        "client_id": 9,
+        "average_loss": 0.970110691699785,
+        "accuracy": 66.58607350096712,
+        "samples": 6204
+      }
+    ],
+    "elapsed_time": 404.9668242931366,
+    "noniid_effectiveness": 2.586412873559957
+  },
+  {
+    "round": 39,
+    "timestamp": "2025-10-31 15:01:01",
+    "global_metrics": {
+      "loss": 1.3059375084889162,
+      "accuracy": 56.73,
+      "correct": 5673,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 0,
+        "average_loss": 0.8531848376705533,
+        "accuracy": 70.73413934937057,
+        "samples": 8023
+      },
+      {
+        "client_id": 9,
+        "average_loss": 0.9337849868941552,
+        "accuracy": 67.52095422308189,
+        "samples": 6204
+      },
+      {
+        "client_id": 8,
+        "average_loss": 0.8825689751022266,
+        "accuracy": 69.67637062213684,
+        "samples": 6767
+      },
+      {
+        "client_id": 3,
+        "average_loss": 1.029838760693868,
+        "accuracy": 65.68021201413427,
+        "samples": 2264
+      },
+      {
+        "client_id": 6,
+        "average_loss": 0.8305330571125854,
+        "accuracy": 71.08026339206265,
+        "samples": 5619
+      }
+    ],
+    "elapsed_time": 416.3251700401306,
+    "noniid_effectiveness": 2.0485019268375675
+  },
+  {
+    "round": 40,
+    "timestamp": "2025-10-31 15:01:10",
+    "global_metrics": {
+      "loss": 1.7349101669469458,
+      "accuracy": 48.69,
+      "correct": 4869,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 9,
+        "average_loss": 0.8848547019909337,
+        "accuracy": 69.35847840103159,
+        "samples": 6204
+      },
+      {
+        "client_id": 8,
+        "average_loss": 0.842394399755406,
+        "accuracy": 70.3265848972957,
+        "samples": 6767
+      },
+      {
+        "client_id": 5,
+        "average_loss": 0.9100142819316763,
+        "accuracy": 69.38950988822012,
+        "samples": 1163
+      },
+      {
+        "client_id": 1,
+        "average_loss": 1.1148255348205567,
+        "accuracy": 61.31519274376417,
+        "samples": 2205
+      },
+      {
+        "client_id": 6,
+        "average_loss": 0.8212985904379324,
+        "accuracy": 71.77433707065315,
+        "samples": 5619
+      }
+    ],
+    "elapsed_time": 425.1803340911865,
+    "noniid_effectiveness": 3.665645880224333
+  },
+  {
+    "round": 41,
+    "timestamp": "2025-10-31 15:01:20",
+    "global_metrics": {
+      "loss": 1.5069475781386066,
+      "accuracy": 48.09,
+      "correct": 4809,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 9,
+        "average_loss": 0.9148604292230508,
+        "accuracy": 68.93939393939394,
+        "samples": 6204
+      },
+      {
+        "client_id": 5,
+        "average_loss": 0.6356733786432367,
+        "accuracy": 79.53568357695615,
+        "samples": 1163
+      },
+      {
+        "client_id": 2,
+        "average_loss": 1.5219587451219558,
+        "accuracy": 54.300062774639045,
+        "samples": 6372
+      },
+      {
+        "client_id": 8,
+        "average_loss": 0.8221469836414985,
+        "accuracy": 71.3314615043594,
+        "samples": 6767
+      },
+      {
+        "client_id": 7,
+        "average_loss": 0.9045759822641101,
+        "accuracy": 69.70305871846394,
+        "samples": 4479
+      }
+    ],
+    "elapsed_time": 435.2652084827423,
+    "noniid_effectiveness": 8.157684458807179
+  },
+  {
+    "round": 42,
+    "timestamp": "2025-10-31 15:01:31",
+    "global_metrics": {
+      "loss": 1.266447030055295,
+      "accuracy": 53.57,
+      "correct": 5357,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 6,
+        "average_loss": 0.873867272653363,
+        "accuracy": 70.75992169425164,
+        "samples": 5619
+      },
+      {
+        "client_id": 1,
+        "average_loss": 1.151106309890747,
+        "accuracy": 61.40589569160998,
+        "samples": 2205
+      },
+      {
+        "client_id": 0,
+        "average_loss": 0.8445265420845577,
+        "accuracy": 71.19531347376294,
+        "samples": 8023
+      },
+      {
+        "client_id": 2,
+        "average_loss": 0.8580613002181053,
+        "accuracy": 71.29629629629629,
+        "samples": 6372
+      },
+      {
+        "client_id": 8,
+        "average_loss": 0.858030507587037,
+        "accuracy": 70.72558002068864,
+        "samples": 6767
+      }
+    ],
+    "elapsed_time": 446.60060381889343,
+    "noniid_effectiveness": 3.842093441169997
+  },
+  {
+    "round": 43,
+    "timestamp": "2025-10-31 15:01:41",
+    "global_metrics": {
+      "loss": 1.195528799940826,
+      "accuracy": 57.34,
+      "correct": 5734,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 3,
+        "average_loss": 0.9722204506397247,
+        "accuracy": 66.386925795053,
+        "samples": 2264
+      },
+      {
+        "client_id": 2,
+        "average_loss": 0.8164207836985589,
+        "accuracy": 72.30069052102951,
+        "samples": 6372
+      },
+      {
+        "client_id": 6,
+        "average_loss": 0.8354559642347422,
+        "accuracy": 70.75992169425164,
+        "samples": 5619
+      },
+      {
+        "client_id": 7,
+        "average_loss": 0.8906218809740883,
+        "accuracy": 69.92632283991962,
+        "samples": 4479
+      },
+      {
+        "client_id": 8,
+        "average_loss": 0.8793183497662814,
+        "accuracy": 70.07536574552978,
+        "samples": 6767
+      }
+    ],
+    "elapsed_time": 456.8162760734558,
+    "noniid_effectiveness": 1.9429565675207994
+  },
+  {
+    "round": 44,
+    "timestamp": "2025-10-31 15:01:52",
+    "global_metrics": {
+      "loss": 1.1828996709957245,
+      "accuracy": 57.15,
+      "correct": 5715,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 3,
+        "average_loss": 0.8326275356941752,
+        "accuracy": 71.46643109540636,
+        "samples": 2264
+      },
+      {
+        "client_id": 0,
+        "average_loss": 0.8226925073161958,
+        "accuracy": 71.15792097719057,
+        "samples": 8023
+      },
+      {
+        "client_id": 2,
+        "average_loss": 0.7862260913848877,
+        "accuracy": 74.01129943502825,
+        "samples": 6372
+      },
+      {
+        "client_id": 4,
+        "average_loss": 0.9090613275766373,
+        "accuracy": 69.468193015505,
+        "samples": 6901
+      },
+      {
+        "client_id": 7,
+        "average_loss": 0.8429241129330226,
+        "accuracy": 71.24358115650814,
+        "samples": 4479
+      }
+    ],
+    "elapsed_time": 467.8123254776001,
+    "noniid_effectiveness": 1.456990339190257
+  },
+  {
+    "round": 45,
+    "timestamp": "2025-10-31 15:02:04",
+    "global_metrics": {
+      "loss": 1.43767558769056,
+      "accuracy": 59.86,
+      "correct": 5986,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 2,
+        "average_loss": 0.7574901908636094,
+        "accuracy": 74.8901443816698,
+        "samples": 6372
+      },
+      {
+        "client_id": 8,
+        "average_loss": 0.7998134313889269,
+        "accuracy": 72.43978129156199,
+        "samples": 6767
+      },
+      {
+        "client_id": 9,
+        "average_loss": 0.8702272219756215,
+        "accuracy": 70.48678272082527,
+        "samples": 6204
+      },
+      {
+        "client_id": 4,
+        "average_loss": 0.7665096841476582,
+        "accuracy": 73.74293580640487,
+        "samples": 6901
+      },
+      {
+        "client_id": 7,
+        "average_loss": 0.8072096645832062,
+        "accuracy": 72.89573565528019,
+        "samples": 4479
+      }
+    ],
+    "elapsed_time": 479.67051887512207,
+    "noniid_effectiveness": 1.4633013580869998
+  },
+  {
+    "round": 46,
+    "timestamp": "2025-10-31 15:02:13",
+    "global_metrics": {
+      "loss": 1.522048203049192,
+      "accuracy": 55.91,
+      "correct": 5591,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 6,
+        "average_loss": 0.809331429952925,
+        "accuracy": 72.20145933440114,
+        "samples": 5619
+      },
+      {
+        "client_id": 1,
+        "average_loss": 1.0587199432509287,
+        "accuracy": 63.673469387755105,
+        "samples": 2205
+      },
+      {
+        "client_id": 2,
+        "average_loss": 0.7784887862205505,
+        "accuracy": 73.39924670433145,
+        "samples": 6372
+      },
+      {
+        "client_id": 5,
+        "average_loss": 1.0633716300914162,
+        "accuracy": 73.60275150472916,
+        "samples": 1163
+      },
+      {
+        "client_id": 9,
+        "average_loss": 0.8336536902742288,
+        "accuracy": 71.61508704061896,
+        "samples": 6204
+      }
+    ],
+    "elapsed_time": 488.82185983657837,
+    "noniid_effectiveness": 3.6872476888479233
+  },
+  {
+    "round": 47,
+    "timestamp": "2025-10-31 15:02:25",
+    "global_metrics": {
+      "loss": 2.311256838831932,
+      "accuracy": 57.13,
+      "correct": 5713,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 7,
+        "average_loss": 0.8479072966745922,
+        "accuracy": 71.22125474436258,
+        "samples": 4479
+      },
+      {
+        "client_id": 2,
+        "average_loss": 0.7515635830163956,
+        "accuracy": 74.9686126804771,
+        "samples": 6372
+      },
+      {
+        "client_id": 3,
+        "average_loss": 0.8498759766419729,
+        "accuracy": 72.6148409893993,
+        "samples": 2264
+      },
+      {
+        "client_id": 0,
+        "average_loss": 0.7929767892947273,
+        "accuracy": 72.66608500560888,
+        "samples": 8023
+      },
+      {
+        "client_id": 9,
+        "average_loss": 0.8447143794949522,
+        "accuracy": 71.45390070921985,
+        "samples": 6204
+      }
+    ],
+    "elapsed_time": 500.03851079940796,
+    "noniid_effectiveness": 1.3287784903797646
+  },
+  {
+    "round": 48,
+    "timestamp": "2025-10-31 15:02:36",
+    "global_metrics": {
+      "loss": 1.1515714636274204,
+      "accuracy": 63.8,
+      "correct": 6380,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 3,
+        "average_loss": 0.7742159275545014,
+        "accuracy": 74.46996466431095,
+        "samples": 2264
+      },
+      {
+        "client_id": 7,
+        "average_loss": 0.779095927306584,
+        "accuracy": 73.49854878321054,
+        "samples": 4479
+      },
+      {
+        "client_id": 9,
+        "average_loss": 0.8131017482157835,
+        "accuracy": 72.37266279819471,
+        "samples": 6204
+      },
+      {
+        "client_id": 0,
+        "average_loss": 0.7569710423075964,
+        "accuracy": 74.02467904773775,
+        "samples": 8023
+      },
+      {
+        "client_id": 4,
+        "average_loss": 0.7550123022110374,
+        "accuracy": 74.69931893928417,
+        "samples": 6901
+      }
+    ],
+    "elapsed_time": 511.5615944862366,
+    "noniid_effectiveness": 0.8289056240744695
+  },
+  {
+    "round": 49,
+    "timestamp": "2025-10-31 15:02:45",
+    "global_metrics": {
+      "loss": 1.4006315978469364,
+      "accuracy": 58.24,
+      "correct": 5824,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 7,
+        "average_loss": 0.73289774954319,
+        "accuracy": 74.88278633623577,
+        "samples": 4479
+      },
+      {
+        "client_id": 4,
+        "average_loss": 0.7183633747476118,
+        "accuracy": 75.58324880452109,
+        "samples": 6901
+      },
+      {
+        "client_id": 8,
+        "average_loss": 0.841372715977003,
+        "accuracy": 73.28210432983597,
+        "samples": 6767
+      },
+      {
+        "client_id": 3,
+        "average_loss": 0.7910730350348685,
+        "accuracy": 73.89575971731449,
+        "samples": 2264
+      },
+      {
+        "client_id": 1,
+        "average_loss": 1.1048199261937823,
+        "accuracy": 63.31065759637188,
+        "samples": 2205
+      }
+    ],
+    "elapsed_time": 520.8230230808258,
+    "noniid_effectiveness": 4.510216428298601
+  },
+  {
+    "round": 50,
+    "timestamp": "2025-10-31 15:02:56",
+    "global_metrics": {
+      "loss": 1.4477321987698792,
+      "accuracy": 48.34,
+      "correct": 4834,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 6,
+        "average_loss": 0.7719111100516536,
+        "accuracy": 72.94892329596014,
+        "samples": 5619
+      },
+      {
+        "client_id": 2,
+        "average_loss": 0.7697166717052459,
+        "accuracy": 74.27809165097301,
+        "samples": 6372
+      },
+      {
+        "client_id": 9,
+        "average_loss": 1.2197751163207378,
+        "accuracy": 61.814958091553834,
+        "samples": 6204
+      },
+      {
+        "client_id": 1,
+        "average_loss": 0.9397602830614362,
+        "accuracy": 67.80045351473923,
+        "samples": 2205
+      },
+      {
+        "client_id": 0,
+        "average_loss": 0.7994151489129142,
+        "accuracy": 72.86551165399476,
+        "samples": 8023
+      }
+    ],
+    "elapsed_time": 531.9008769989014,
+    "noniid_effectiveness": 4.626558755369783
+  },
+  {
+    "round": 51,
+    "timestamp": "2025-10-31 15:03:06",
+    "global_metrics": {
+      "loss": 1.5484877490693596,
+      "accuracy": 46.44,
+      "correct": 4644,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 2,
+        "average_loss": 0.7610287076234817,
+        "accuracy": 74.18392969240426,
+        "samples": 6372
+      },
+      {
+        "client_id": 8,
+        "average_loss": 0.8239498655751066,
+        "accuracy": 72.26245012560958,
+        "samples": 6767
+      },
+      {
+        "client_id": 9,
+        "average_loss": 0.8325808994548837,
+        "accuracy": 72.34042553191489,
+        "samples": 6204
+      },
+      {
+        "client_id": 1,
+        "average_loss": 0.9575630928788866,
+        "accuracy": 67.52834467120181,
+        "samples": 2205
+      },
+      {
+        "client_id": 5,
+        "average_loss": 1.994586900660866,
+        "accuracy": 46.087704213241615,
+        "samples": 1163
+      }
+    ],
+    "elapsed_time": 541.1114237308502,
+    "noniid_effectiveness": 10.431458210152025
+  },
+  {
+    "round": 52,
+    "timestamp": "2025-10-31 15:03:15",
+    "global_metrics": {
+      "loss": 1.7427365965903945,
+      "accuracy": 60.4,
+      "correct": 6040,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 1,
+        "average_loss": 0.9513779010091509,
+        "accuracy": 67.66439909297053,
+        "samples": 2205
+      },
+      {
+        "client_id": 8,
+        "average_loss": 0.7600258375113865,
+        "accuracy": 74.03576178513374,
+        "samples": 6767
+      },
+      {
+        "client_id": 7,
+        "average_loss": 0.8245405350412641,
+        "accuracy": 72.09198481803975,
+        "samples": 4479
+      },
+      {
+        "client_id": 3,
+        "average_loss": 0.9580546965201696,
+        "accuracy": 67.04946996466431,
+        "samples": 2264
+      },
+      {
+        "client_id": 4,
+        "average_loss": 0.7458592620160844,
+        "accuracy": 75.10505723808144,
+        "samples": 6901
+      }
+    ],
+    "elapsed_time": 550.2296950817108,
+    "noniid_effectiveness": 3.2806541555732247
+  },
+  {
+    "round": 53,
+    "timestamp": "2025-10-31 15:03:28",
+    "global_metrics": {
+      "loss": 1.2191359389359784,
+      "accuracy": 57.31,
+      "correct": 5731,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 8,
+        "average_loss": 0.7282580845760849,
+        "accuracy": 74.7894192404315,
+        "samples": 6767
+      },
+      {
+        "client_id": 6,
+        "average_loss": 0.7698892094194889,
+        "accuracy": 73.82096458444563,
+        "samples": 5619
+      },
+      {
+        "client_id": 1,
+        "average_loss": 0.9694593940462385,
+        "accuracy": 67.34693877551021,
+        "samples": 2205
+      },
+      {
+        "client_id": 0,
+        "average_loss": 0.7507029864050093,
+        "accuracy": 74.19917736507541,
+        "samples": 8023
+      },
+      {
+        "client_id": 2,
+        "average_loss": 1.2730623671412469,
+        "accuracy": 74.46641556811048,
+        "samples": 6372
+      }
+    ],
+    "elapsed_time": 563.9546411037445,
+    "noniid_effectiveness": 2.806886805951118
+  },
+  {
+    "round": 54,
+    "timestamp": "2025-10-31 15:03:39",
+    "global_metrics": {
+      "loss": 1.3299125694924858,
+      "accuracy": 59.99,
+      "correct": 5999,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 9,
+        "average_loss": 0.820261069794291,
+        "accuracy": 72.45325596389426,
+        "samples": 6204
+      },
+      {
+        "client_id": 3,
+        "average_loss": 0.8230632493893305,
+        "accuracy": 72.04063604240282,
+        "samples": 2264
+      },
+      {
+        "client_id": 1,
+        "average_loss": 0.8910849843706403,
+        "accuracy": 69.29705215419501,
+        "samples": 2205
+      },
+      {
+        "client_id": 5,
+        "average_loss": 0.9770414688085255,
+        "accuracy": 68.70163370593293,
+        "samples": 1163
+      },
+      {
+        "client_id": 6,
+        "average_loss": 0.6840071579949423,
+        "accuracy": 75.99216942516462,
+        "samples": 5619
+      }
+    ],
+    "elapsed_time": 574.4986562728882,
+    "noniid_effectiveness": 2.6027085157150283
+  },
+  {
+    "round": 55,
+    "timestamp": "2025-10-31 15:03:56",
+    "global_metrics": {
+      "loss": 1.7295678550270712,
+      "accuracy": 41.11,
+      "correct": 4111,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 1,
+        "average_loss": 0.889422653402601,
+        "accuracy": 70.56689342403628,
+        "samples": 2205
+      },
+      {
+        "client_id": 4,
+        "average_loss": 0.7194286535183588,
+        "accuracy": 75.77162730039124,
+        "samples": 6901
+      },
+      {
+        "client_id": 8,
+        "average_loss": 0.7334896930546131,
+        "accuracy": 74.89286242057041,
+        "samples": 6767
+      },
+      {
+        "client_id": 2,
+        "average_loss": 1.7327862584590912,
+        "accuracy": 50.0,
+        "samples": 6372
+      },
+      {
+        "client_id": 0,
+        "average_loss": 0.7488431675093514,
+        "accuracy": 74.34874735136482,
+        "samples": 8023
+      }
+    ],
+    "elapsed_time": 591.6808586120605,
+    "noniid_effectiveness": 9.721910375596282
+  },
+  {
+    "round": 56,
+    "timestamp": "2025-10-31 15:04:09",
+    "global_metrics": {
+      "loss": 1.4076299948297488,
+      "accuracy": 51.04,
+      "correct": 5104,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 7,
+        "average_loss": 0.9653950912611825,
+        "accuracy": 69.39048894842598,
+        "samples": 4479
+      },
+      {
+        "client_id": 1,
+        "average_loss": 1.1576844555991037,
+        "accuracy": 62.131519274376416,
+        "samples": 2205
+      },
+      {
+        "client_id": 5,
+        "average_loss": 1.2692344533769708,
+        "accuracy": 64.8323301805675,
+        "samples": 1163
+      },
+      {
+        "client_id": 9,
+        "average_loss": 0.912946358169477,
+        "accuracy": 69.90651192778853,
+        "samples": 6204
+      },
+      {
+        "client_id": 8,
+        "average_loss": 0.8159030231664766,
+        "accuracy": 72.24767252844687,
+        "samples": 6767
+      }
+    ],
+    "elapsed_time": 604.6781964302063,
+    "noniid_effectiveness": 3.6780230139386574
+  },
+  {
+    "round": 57,
+    "timestamp": "2025-10-31 15:04:25",
+    "global_metrics": {
+      "loss": 1.0362417018337615,
+      "accuracy": 61.05,
+      "correct": 6105,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 1,
+        "average_loss": 0.9337872964995247,
+        "accuracy": 68.66213151927438,
+        "samples": 2205
+      },
+      {
+        "client_id": 2,
+        "average_loss": 0.8119348594546318,
+        "accuracy": 72.06528562460765,
+        "samples": 6372
+      },
+      {
+        "client_id": 7,
+        "average_loss": 0.7275036603212357,
+        "accuracy": 74.7934806876535,
+        "samples": 4479
+      },
+      {
+        "client_id": 0,
+        "average_loss": 0.7476309488217036,
+        "accuracy": 74.3986040134613,
+        "samples": 8023
+      },
+      {
+        "client_id": 8,
+        "average_loss": 0.6745733821167136,
+        "accuracy": 76.9617260233486,
+        "samples": 6767
+      }
+    ],
+    "elapsed_time": 620.4337592124939,
+    "noniid_effectiveness": 2.8231517673920274
+  },
+  {
+    "round": 58,
+    "timestamp": "2025-10-31 15:04:36",
+    "global_metrics": {
+      "loss": 1.1225356057191351,
+      "accuracy": 61.11,
+      "correct": 6111,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 5,
+        "average_loss": 0.8589037860694685,
+        "accuracy": 71.53912295786759,
+        "samples": 1163
+      },
+      {
+        "client_id": 9,
+        "average_loss": 0.7962338789222166,
+        "accuracy": 73.21083172147002,
+        "samples": 6204
+      },
+      {
+        "client_id": 3,
+        "average_loss": 0.9040852520200942,
+        "accuracy": 69.65547703180212,
+        "samples": 2264
+      },
+      {
+        "client_id": 1,
+        "average_loss": 0.9137679644993373,
+        "accuracy": 68.20861678004535,
+        "samples": 2205
+      },
+      {
+        "client_id": 8,
+        "average_loss": 0.6989968331917277,
+        "accuracy": 75.42485591842767,
+        "samples": 6767
+      }
+    ],
+    "elapsed_time": 631.7042865753174,
+    "noniid_effectiveness": 2.549915867384868
+  },
+  {
+    "round": 59,
+    "timestamp": "2025-10-31 15:04:53",
+    "global_metrics": {
+      "loss": 1.2332790345902656,
+      "accuracy": 59.54,
+      "correct": 5954,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 9,
+        "average_loss": 0.747990779041015,
+        "accuracy": 74.95164410058027,
+        "samples": 6204
+      },
+      {
+        "client_id": 1,
+        "average_loss": 0.8544627709048135,
+        "accuracy": 71.56462585034014,
+        "samples": 2205
+      },
+      {
+        "client_id": 0,
+        "average_loss": 0.7486469206355867,
+        "accuracy": 74.28642652374424,
+        "samples": 8023
+      },
+      {
+        "client_id": 6,
+        "average_loss": 0.6949515359645541,
+        "accuracy": 75.38707955152162,
+        "samples": 5619
+      },
+      {
+        "client_id": 8,
+        "average_loss": 0.6573601204831645,
+        "accuracy": 77.41983153539235,
+        "samples": 6767
+      }
+    ],
+    "elapsed_time": 648.3291280269623,
+    "noniid_effectiveness": 1.893784462894194
+  },
+  {
+    "round": 60,
+    "timestamp": "2025-10-31 15:05:10",
+    "global_metrics": {
+      "loss": 1.0669026963270394,
+      "accuracy": 63.66,
+      "correct": 6366,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 8,
+        "average_loss": 0.6839646011028649,
+        "accuracy": 76.75483966307078,
+        "samples": 6767
+      },
+      {
+        "client_id": 2,
+        "average_loss": 0.7125942984223366,
+        "accuracy": 75.98870056497175,
+        "samples": 6372
+      },
+      {
+        "client_id": 4,
+        "average_loss": 0.7181540070860474,
+        "accuracy": 76.11940298507463,
+        "samples": 6901
+      },
+      {
+        "client_id": 0,
+        "average_loss": 0.7163079260360627,
+        "accuracy": 75.37080892434251,
+        "samples": 8023
+      },
+      {
+        "client_id": 5,
+        "average_loss": 0.7182232047382154,
+        "accuracy": 76.87016337059329,
+        "samples": 1163
+      }
+    ],
+    "elapsed_time": 665.3853898048401,
+    "noniid_effectiveness": 0.5465359052151718
+  },
+  {
+    "round": 61,
+    "timestamp": "2025-10-31 15:05:22",
+    "global_metrics": {
+      "loss": 1.0386765918154626,
+      "accuracy": 62.32,
+      "correct": 6232,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 3,
+        "average_loss": 0.8931402977969911,
+        "accuracy": 71.46643109540636,
+        "samples": 2264
+      },
+      {
+        "client_id": 9,
+        "average_loss": 0.779073556366655,
+        "accuracy": 73.93617021276596,
+        "samples": 6204
+      },
+      {
+        "client_id": 6,
+        "average_loss": 0.7109999419613318,
+        "accuracy": 75.84979533724862,
+        "samples": 5619
+      },
+      {
+        "client_id": 8,
+        "average_loss": 0.6697273532736976,
+        "accuracy": 77.43460913255505,
+        "samples": 6767
+      },
+      {
+        "client_id": 4,
+        "average_loss": 0.6647830544798462,
+        "accuracy": 77.61194029850746,
+        "samples": 6901
+      }
+    ],
+    "elapsed_time": 677.0421311855316,
+    "noniid_effectiveness": 2.3130973478992347
+  },
+  {
+    "round": 62,
+    "timestamp": "2025-10-31 15:05:32",
+    "global_metrics": {
+      "loss": 1.0430995089233301,
+      "accuracy": 62.61,
+      "correct": 6261,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 4,
+        "average_loss": 0.659150368085614,
+        "accuracy": 78.23503840023184,
+        "samples": 6901
+      },
+      {
+        "client_id": 7,
+        "average_loss": 0.740614988548415,
+        "accuracy": 75.2176825184193,
+        "samples": 4479
+      },
+      {
+        "client_id": 1,
+        "average_loss": 0.8575415457998004,
+        "accuracy": 71.51927437641723,
+        "samples": 2205
+      },
+      {
+        "client_id": 6,
+        "average_loss": 0.6718927835198966,
+        "accuracy": 76.18793379604912,
+        "samples": 5619
+      },
+      {
+        "client_id": 8,
+        "average_loss": 0.6729214309521441,
+        "accuracy": 76.65139648293187,
+        "samples": 6767
+      }
+    ],
+    "elapsed_time": 687.4944109916687,
+    "noniid_effectiveness": 2.244366135346026
+  },
+  {
+    "round": 63,
+    "timestamp": "2025-10-31 15:05:42",
+    "global_metrics": {
+      "loss": 1.1083479823580213,
+      "accuracy": 64.33,
+      "correct": 6433,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 6,
+        "average_loss": 0.6545882814309814,
+        "accuracy": 76.91760099661862,
+        "samples": 5619
+      },
+      {
+        "client_id": 9,
+        "average_loss": 0.7481126668526954,
+        "accuracy": 74.90328820116054,
+        "samples": 6204
+      },
+      {
+        "client_id": 7,
+        "average_loss": 0.7058685515608106,
+        "accuracy": 76.31167671355213,
+        "samples": 4479
+      },
+      {
+        "client_id": 5,
+        "average_loss": 0.6685829617475209,
+        "accuracy": 79.27773000859845,
+        "samples": 1163
+      },
+      {
+        "client_id": 0,
+        "average_loss": 0.710486272734309,
+        "accuracy": 75.83198304873488,
+        "samples": 8023
+      }
+    ],
+    "elapsed_time": 697.8463525772095,
+    "noniid_effectiveness": 1.4704543417277594
+  },
+  {
+    "round": 64,
+    "timestamp": "2025-10-31 15:05:52",
+    "global_metrics": {
+      "loss": 1.095384554878162,
+      "accuracy": 61.62,
+      "correct": 6162,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 9,
+        "average_loss": 0.7213317933156318,
+        "accuracy": 75.8381689232753,
+        "samples": 6204
+      },
+      {
+        "client_id": 8,
+        "average_loss": 0.6495960332312674,
+        "accuracy": 77.83360425594799,
+        "samples": 6767
+      },
+      {
+        "client_id": 5,
+        "average_loss": 1.0128158817165775,
+        "accuracy": 77.128116938951,
+        "samples": 1163
+      },
+      {
+        "client_id": 6,
+        "average_loss": 0.6766055920584635,
+        "accuracy": 76.27691760099661,
+        "samples": 5619
+      },
+      {
+        "client_id": 7,
+        "average_loss": 0.6663996700729643,
+        "accuracy": 78.231748158071,
+        "samples": 4479
+      }
+    ],
+    "elapsed_time": 707.3071708679199,
+    "noniid_effectiveness": 0.9035675725929665
+  },
+  {
+    "round": 65,
+    "timestamp": "2025-10-31 15:06:02",
+    "global_metrics": {
+      "loss": 1.2721067826459362,
+      "accuracy": 54.27,
+      "correct": 5427,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 3,
+        "average_loss": 0.9349954831931326,
+        "accuracy": 69.96466431095406,
+        "samples": 2264
+      },
+      {
+        "client_id": 7,
+        "average_loss": 0.6529066639287131,
+        "accuracy": 77.85219915159634,
+        "samples": 4479
+      },
+      {
+        "client_id": 9,
+        "average_loss": 1.1019025629328698,
+        "accuracy": 64.87749838813669,
+        "samples": 6204
+      },
+      {
+        "client_id": 6,
+        "average_loss": 0.670239909467372,
+        "accuracy": 76.73963338672361,
+        "samples": 5619
+      },
+      {
+        "client_id": 4,
+        "average_loss": 0.6987341269850731,
+        "accuracy": 76.65555716562817,
+        "samples": 6901
+      }
+    ],
+    "elapsed_time": 717.2402393817902,
+    "noniid_effectiveness": 5.016824951244564
+  },
+  {
+    "round": 66,
+    "timestamp": "2025-10-31 15:06:12",
+    "global_metrics": {
+      "loss": 1.0862298604029759,
+      "accuracy": 65.9,
+      "correct": 6590,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 0,
+        "average_loss": 0.7063825929921771,
+        "accuracy": 75.79459055216253,
+        "samples": 8023
+      },
+      {
+        "client_id": 7,
+        "average_loss": 0.7198165744543076,
+        "accuracy": 75.9767805313686,
+        "samples": 4479
+      },
+      {
+        "client_id": 6,
+        "average_loss": 0.6707945709878748,
+        "accuracy": 76.09894999110162,
+        "samples": 5619
+      },
+      {
+        "client_id": 9,
+        "average_loss": 0.7211722605621692,
+        "accuracy": 75.43520309477756,
+        "samples": 6204
+      },
+      {
+        "client_id": 3,
+        "average_loss": 0.7355244904756546,
+        "accuracy": 77.42932862190813,
+        "samples": 2264
+      }
+    ],
+    "elapsed_time": 727.4842100143433,
+    "noniid_effectiveness": 0.679190314167738
+  },
+  {
+    "round": 67,
+    "timestamp": "2025-10-31 15:06:24",
+    "global_metrics": {
+      "loss": 0.9252230843920617,
+      "accuracy": 68.96,
+      "correct": 6896,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 7,
+        "average_loss": 0.6477694996765682,
+        "accuracy": 78.70060281312793,
+        "samples": 4479
+      },
+      {
+        "client_id": 9,
+        "average_loss": 0.6744027128539134,
+        "accuracy": 77.498388136686,
+        "samples": 6204
+      },
+      {
+        "client_id": 2,
+        "average_loss": 0.6554807832837105,
+        "accuracy": 78.02887633396108,
+        "samples": 6372
+      },
+      {
+        "client_id": 6,
+        "average_loss": 0.6324699107896198,
+        "accuracy": 77.84303256807262,
+        "samples": 5619
+      },
+      {
+        "client_id": 8,
+        "average_loss": 0.676553948307937,
+        "accuracy": 76.97650362051131,
+        "samples": 6767
+      }
+    ],
+    "elapsed_time": 739.1515121459961,
+    "noniid_effectiveness": 0.5716621712971245
+  },
+  {
+    "round": 68,
+    "timestamp": "2025-10-31 15:06:35",
+    "global_metrics": {
+      "loss": 1.004123089040161,
+      "accuracy": 67.57,
+      "correct": 6757,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 4,
+        "average_loss": 0.6315663578333678,
+        "accuracy": 79.07549630488334,
+        "samples": 6901
+      },
+      {
+        "client_id": 7,
+        "average_loss": 0.6527076457227979,
+        "accuracy": 78.07546327305202,
+        "samples": 4479
+      },
+      {
+        "client_id": 0,
+        "average_loss": 0.6630490190453,
+        "accuracy": 77.37753957372554,
+        "samples": 8023
+      },
+      {
+        "client_id": 1,
+        "average_loss": 0.9043264286858695,
+        "accuracy": 70.47619047619048,
+        "samples": 2205
+      },
+      {
+        "client_id": 6,
+        "average_loss": 0.617923653261228,
+        "accuracy": 78.12778074390461,
+        "samples": 5619
+      }
+    ],
+    "elapsed_time": 750.0618906021118,
+    "noniid_effectiveness": 3.122220012100141
+  },
+  {
+    "round": 69,
+    "timestamp": "2025-10-31 15:06:45",
+    "global_metrics": {
+      "loss": 1.1572276604403355,
+      "accuracy": 67.42,
+      "correct": 6742,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 9,
+        "average_loss": 0.6692896620514467,
+        "accuracy": 77.56286266924565,
+        "samples": 6204
+      },
+      {
+        "client_id": 2,
+        "average_loss": 0.6449429759383202,
+        "accuracy": 78.35844318895167,
+        "samples": 6372
+      },
+      {
+        "client_id": 3,
+        "average_loss": 0.8011799876888593,
+        "accuracy": 73.10070671378092,
+        "samples": 2264
+      },
+      {
+        "client_id": 1,
+        "average_loss": 0.849242627620697,
+        "accuracy": 71.38321995464852,
+        "samples": 2205
+      },
+      {
+        "client_id": 0,
+        "average_loss": 0.66191518448648,
+        "accuracy": 77.19057709086377,
+        "samples": 8023
+      }
+    ],
+    "elapsed_time": 760.3675224781036,
+    "noniid_effectiveness": 2.756330933517387
+  },
+  {
+    "round": 70,
+    "timestamp": "2025-10-31 15:06:56",
+    "global_metrics": {
+      "loss": 1.090565665512328,
+      "accuracy": 66.72,
+      "correct": 6672,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 9,
+        "average_loss": 0.6653056885163808,
+        "accuracy": 77.53062540296582,
+        "samples": 6204
+      },
+      {
+        "client_id": 0,
+        "average_loss": 0.651554654041926,
+        "accuracy": 77.86364202916614,
+        "samples": 8023
+      },
+      {
+        "client_id": 8,
+        "average_loss": 0.6595646761498362,
+        "accuracy": 77.9961578247377,
+        "samples": 6767
+      },
+      {
+        "client_id": 1,
+        "average_loss": 0.8669634291103908,
+        "accuracy": 70.29478458049887,
+        "samples": 2205
+      },
+      {
+        "client_id": 2,
+        "average_loss": 0.5885601049661636,
+        "accuracy": 80.74387947269304,
+        "samples": 6372
+      }
+    ],
+    "elapsed_time": 771.8372557163239,
+    "noniid_effectiveness": 3.490877563289547
+  },
+  {
+    "round": 71,
+    "timestamp": "2025-10-31 15:07:06",
+    "global_metrics": {
+      "loss": 1.0378886290416596,
+      "accuracy": 65.28,
+      "correct": 6528,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 9,
+        "average_loss": 0.6820858489606798,
+        "accuracy": 77.43391360412637,
+        "samples": 6204
+      },
+      {
+        "client_id": 4,
+        "average_loss": 0.6313404841003595,
+        "accuracy": 78.72772062019997,
+        "samples": 6901
+      },
+      {
+        "client_id": 2,
+        "average_loss": 0.6368749129772187,
+        "accuracy": 78.29566854990584,
+        "samples": 6372
+      },
+      {
+        "client_id": 3,
+        "average_loss": 0.7909941201408704,
+        "accuracy": 73.2773851590106,
+        "samples": 2264
+      },
+      {
+        "client_id": 5,
+        "average_loss": 1.5038225588045622,
+        "accuracy": 72.48495270851247,
+        "samples": 1163
+      }
+    ],
+    "elapsed_time": 781.0227830410004,
+    "noniid_effectiveness": 2.6277443836285532
+  },
+  {
+    "round": 72,
+    "timestamp": "2025-10-31 15:07:15",
+    "global_metrics": {
+      "loss": 1.1584606724939528,
+      "accuracy": 63.28,
+      "correct": 6328,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 6,
+        "average_loss": 0.6520575498315421,
+        "accuracy": 77.13116212849262,
+        "samples": 5619
+      },
+      {
+        "client_id": 9,
+        "average_loss": 0.6718047405641103,
+        "accuracy": 77.45003223726629,
+        "samples": 6204
+      },
+      {
+        "client_id": 1,
+        "average_loss": 0.9399868011474609,
+        "accuracy": 68.20861678004535,
+        "samples": 2205
+      },
+      {
+        "client_id": 0,
+        "average_loss": 0.6704669154825664,
+        "accuracy": 77.19057709086377,
+        "samples": 8023
+      },
+      {
+        "client_id": 5,
+        "average_loss": 1.362044174420206,
+        "accuracy": 57.69561478933792,
+        "samples": 1163
+      }
+    ],
+    "elapsed_time": 790.4932277202606,
+    "noniid_effectiveness": 7.7573654973947646
+  },
+  {
+    "round": 73,
+    "timestamp": "2025-10-31 15:07:24",
+    "global_metrics": {
+      "loss": 0.8827389281266814,
+      "accuracy": 68.99,
+      "correct": 6899,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 8,
+        "average_loss": 0.654864528269138,
+        "accuracy": 78.12915619920201,
+        "samples": 6767
+      },
+      {
+        "client_id": 1,
+        "average_loss": 0.7934351733752659,
+        "accuracy": 73.78684807256236,
+        "samples": 2205
+      },
+      {
+        "client_id": 9,
+        "average_loss": 0.6574076927199806,
+        "accuracy": 78.25596389426177,
+        "samples": 6204
+      },
+      {
+        "client_id": 3,
+        "average_loss": 0.8602320659491751,
+        "accuracy": 71.42226148409894,
+        "samples": 2264
+      },
+      {
+        "client_id": 7,
+        "average_loss": 0.6849229804107121,
+        "accuracy": 77.20473319937486,
+        "samples": 4479
+      }
+    ],
+    "elapsed_time": 799.4061419963837,
+    "noniid_effectiveness": 2.7070018330617285
+  },
+  {
+    "round": 74,
+    "timestamp": "2025-10-31 15:07:36",
+    "global_metrics": {
+      "loss": 0.9354412468375674,
+      "accuracy": 67.73,
+      "correct": 6773,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 0,
+        "average_loss": 0.6446492276967518,
+        "accuracy": 78.16278200174499,
+        "samples": 8023
+      },
+      {
+        "client_id": 6,
+        "average_loss": 0.6216647997498512,
+        "accuracy": 78.4837159636946,
+        "samples": 5619
+      },
+      {
+        "client_id": 9,
+        "average_loss": 0.627543317595708,
+        "accuracy": 79.11025145067698,
+        "samples": 6204
+      },
+      {
+        "client_id": 7,
+        "average_loss": 0.6050161293574742,
+        "accuracy": 79.5713328868051,
+        "samples": 4479
+      },
+      {
+        "client_id": 4,
+        "average_loss": 0.6244804337620735,
+        "accuracy": 78.97406173018403,
+        "samples": 6901
+      }
+    ],
+    "elapsed_time": 811.5127944946289,
+    "noniid_effectiveness": 0.49179915339544766
+  },
+  {
+    "round": 75,
+    "timestamp": "2025-10-31 15:07:47",
+    "global_metrics": {
+      "loss": 0.8781402160407631,
+      "accuracy": 68.72,
+      "correct": 6872,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 9,
+        "average_loss": 0.6172149291972524,
+        "accuracy": 79.22308188265634,
+        "samples": 6204
+      },
+      {
+        "client_id": 8,
+        "average_loss": 0.6476750340101853,
+        "accuracy": 78.1439337963647,
+        "samples": 6767
+      },
+      {
+        "client_id": 0,
+        "average_loss": 0.5970360111622584,
+        "accuracy": 79.70833852673563,
+        "samples": 8023
+      },
+      {
+        "client_id": 1,
+        "average_loss": 0.8985705154282706,
+        "accuracy": 71.15646258503402,
+        "samples": 2205
+      },
+      {
+        "client_id": 2,
+        "average_loss": 0.6112625801563263,
+        "accuracy": 79.4569993722536,
+        "samples": 6372
+      }
+    ],
+    "elapsed_time": 822.8846788406372,
+    "noniid_effectiveness": 3.2349220740689564
+  },
+  {
+    "round": 76,
+    "timestamp": "2025-10-31 15:07:58",
+    "global_metrics": {
+      "loss": 0.9929631990232285,
+      "accuracy": 66.1,
+      "correct": 6610,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 7,
+        "average_loss": 0.6088149960551943,
+        "accuracy": 79.7052913596785,
+        "samples": 4479
+      },
+      {
+        "client_id": 2,
+        "average_loss": 0.596272322833538,
+        "accuracy": 79.7865662272442,
+        "samples": 6372
+      },
+      {
+        "client_id": 1,
+        "average_loss": 0.787683584008898,
+        "accuracy": 71.92743764172336,
+        "samples": 2205
+      },
+      {
+        "client_id": 4,
+        "average_loss": 0.614207884227788,
+        "accuracy": 79.4957252572091,
+        "samples": 6901
+      },
+      {
+        "client_id": 8,
+        "average_loss": 0.6307927668094635,
+        "accuracy": 78.64637209989655,
+        "samples": 6767
+      }
+    ],
+    "elapsed_time": 833.3966217041016,
+    "noniid_effectiveness": 3.0196810011884785
+  },
+  {
+    "round": 77,
+    "timestamp": "2025-10-31 15:08:07",
+    "global_metrics": {
+      "loss": 1.053517042071956,
+      "accuracy": 68.38,
+      "correct": 6838,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 3,
+        "average_loss": 0.7883162026604017,
+        "accuracy": 74.82332155477032,
+        "samples": 2264
+      },
+      {
+        "client_id": 7,
+        "average_loss": 0.610093897155353,
+        "accuracy": 79.19178388033043,
+        "samples": 4479
+      },
+      {
+        "client_id": 9,
+        "average_loss": 0.6495780499325585,
+        "accuracy": 78.06254029658285,
+        "samples": 6204
+      },
+      {
+        "client_id": 1,
+        "average_loss": 0.800870258467538,
+        "accuracy": 73.42403628117914,
+        "samples": 2205
+      },
+      {
+        "client_id": 0,
+        "average_loss": 0.6359937905319153,
+        "accuracy": 77.97581951888321,
+        "samples": 8023
+      }
+    ],
+    "elapsed_time": 842.6250030994415,
+    "noniid_effectiveness": 2.188468754561308
+  },
+  {
+    "round": 78,
+    "timestamp": "2025-10-31 15:08:16",
+    "global_metrics": {
+      "loss": 1.0269430101297463,
+      "accuracy": 66.03,
+      "correct": 6603,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 5,
+        "average_loss": 1.1819742306282646,
+        "accuracy": 70.7652622527945,
+        "samples": 1163
+      },
+      {
+        "client_id": 1,
+        "average_loss": 0.8343683881419045,
+        "accuracy": 73.28798185941044,
+        "samples": 2205
+      },
+      {
+        "client_id": 9,
+        "average_loss": 0.6076587198935833,
+        "accuracy": 79.60992907801419,
+        "samples": 6204
+      },
+      {
+        "client_id": 4,
+        "average_loss": 0.6434676059418254,
+        "accuracy": 78.35096362845964,
+        "samples": 6901
+      },
+      {
+        "client_id": 6,
+        "average_loss": 0.6119456152347001,
+        "accuracy": 78.66168357358961,
+        "samples": 5619
+      }
+    ],
+    "elapsed_time": 851.6881976127625,
+    "noniid_effectiveness": 3.473020368870102
+  },
+  {
+    "round": 79,
+    "timestamp": "2025-10-31 15:08:28",
+    "global_metrics": {
+      "loss": 0.9411692399128228,
+      "accuracy": 67.85,
+      "correct": 6785,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 0,
+        "average_loss": 0.6362394330993532,
+        "accuracy": 77.9010345257385,
+        "samples": 8023
+      },
+      {
+        "client_id": 6,
+        "average_loss": 0.5743469660255042,
+        "accuracy": 79.6760989499911,
+        "samples": 5619
+      },
+      {
+        "client_id": 1,
+        "average_loss": 0.6880292168685368,
+        "accuracy": 76.68934240362812,
+        "samples": 2205
+      },
+      {
+        "client_id": 4,
+        "average_loss": 0.6042705363145581,
+        "accuracy": 79.45225329662368,
+        "samples": 6901
+      },
+      {
+        "client_id": 2,
+        "average_loss": 0.5974233949184418,
+        "accuracy": 79.88072818581293,
+        "samples": 6372
+      }
+    ],
+    "elapsed_time": 863.1763687133789,
+    "noniid_effectiveness": 1.2322243851486514
+  },
+  {
+    "round": 80,
+    "timestamp": "2025-10-31 15:08:39",
+    "global_metrics": {
+      "loss": 0.8960086312263634,
+      "accuracy": 70.54,
+      "correct": 7054,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 3,
+        "average_loss": 0.7184727258152432,
+        "accuracy": 76.14840989399293,
+        "samples": 2264
+      },
+      {
+        "client_id": 6,
+        "average_loss": 0.5757198977199468,
+        "accuracy": 79.49813134009611,
+        "samples": 5619
+      },
+      {
+        "client_id": 2,
+        "average_loss": 0.5487128898501397,
+        "accuracy": 81.63841807909604,
+        "samples": 6372
+      },
+      {
+        "client_id": 9,
+        "average_loss": 0.6697275448091251,
+        "accuracy": 77.72404900064474,
+        "samples": 6204
+      },
+      {
+        "client_id": 8,
+        "average_loss": 0.626471775039187,
+        "accuracy": 78.94192404315058,
+        "samples": 6767
+      }
+    ],
+    "elapsed_time": 874.0388350486755,
+    "noniid_effectiveness": 1.8304243284199269
+  },
+  {
+    "round": 81,
+    "timestamp": "2025-10-31 15:08:46",
+    "global_metrics": {
+      "loss": 1.067549386601539,
+      "accuracy": 61.84,
+      "correct": 6184,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 6,
+        "average_loss": 0.5829879560253837,
+        "accuracy": 79.6049119060331,
+        "samples": 5619
+      },
+      {
+        "client_id": 5,
+        "average_loss": 1.1101118451670597,
+        "accuracy": 65.77815993121239,
+        "samples": 1163
+      },
+      {
+        "client_id": 9,
+        "average_loss": 0.6203123088350001,
+        "accuracy": 79.90006447453256,
+        "samples": 6204
+      },
+      {
+        "client_id": 1,
+        "average_loss": 0.8574096849986486,
+        "accuracy": 70.38548752834467,
+        "samples": 2205
+      },
+      {
+        "client_id": 3,
+        "average_loss": 0.6134269717666838,
+        "accuracy": 78.97526501766785,
+        "samples": 2264
+      }
+    ],
+    "elapsed_time": 881.4605689048767,
+    "noniid_effectiveness": 5.784968004299303
+  },
+  {
+    "round": 82,
+    "timestamp": "2025-10-31 15:08:57",
+    "global_metrics": {
+      "loss": 1.0666453382771486,
+      "accuracy": 68.23,
+      "correct": 6823,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 1,
+        "average_loss": 0.7411293472562518,
+        "accuracy": 74.78458049886622,
+        "samples": 2205
+      },
+      {
+        "client_id": 7,
+        "average_loss": 0.6879739791154862,
+        "accuracy": 76.91448984148248,
+        "samples": 4479
+      },
+      {
+        "client_id": 9,
+        "average_loss": 0.6522091756161955,
+        "accuracy": 78.23984526112186,
+        "samples": 6204
+      },
+      {
+        "client_id": 0,
+        "average_loss": 0.6367474177053997,
+        "accuracy": 78.49931447089617,
+        "samples": 8023
+      },
+      {
+        "client_id": 6,
+        "average_loss": 0.556082886559042,
+        "accuracy": 80.6193272824346,
+        "samples": 5619
+      }
+    ],
+    "elapsed_time": 892.0656044483185,
+    "noniid_effectiveness": 1.9239195070092443
+  },
+  {
+    "round": 83,
+    "timestamp": "2025-10-31 15:09:05",
+    "global_metrics": {
+      "loss": 1.4979610503858822,
+      "accuracy": 64.96,
+      "correct": 6496,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 1,
+        "average_loss": 0.7863848115716662,
+        "accuracy": 73.65079365079364,
+        "samples": 2205
+      },
+      {
+        "client_id": 8,
+        "average_loss": 0.6183096192917734,
+        "accuracy": 78.76459287719817,
+        "samples": 6767
+      },
+      {
+        "client_id": 5,
+        "average_loss": 0.8216190808697751,
+        "accuracy": 72.57093723129837,
+        "samples": 1163
+      },
+      {
+        "client_id": 7,
+        "average_loss": 0.6338463170187814,
+        "accuracy": 79.10247823174817,
+        "samples": 4479
+      },
+      {
+        "client_id": 2,
+        "average_loss": 0.6083262673020363,
+        "accuracy": 79.80225988700565,
+        "samples": 6372
+      }
+    ],
+    "elapsed_time": 900.6345102787018,
+    "noniid_effectiveness": 3.0323157697888896
+  },
+  {
+    "round": 84,
+    "timestamp": "2025-10-31 15:09:14",
+    "global_metrics": {
+      "loss": 1.260491319522736,
+      "accuracy": 70.84,
+      "correct": 7084,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 4,
+        "average_loss": 0.58954558217967,
+        "accuracy": 80.29271120127518,
+        "samples": 6901
+      },
+      {
+        "client_id": 9,
+        "average_loss": 0.6520488237597278,
+        "accuracy": 78.61057382333978,
+        "samples": 6204
+      },
+      {
+        "client_id": 1,
+        "average_loss": 0.7430946137223925,
+        "accuracy": 74.14965986394557,
+        "samples": 2205
+      },
+      {
+        "client_id": 2,
+        "average_loss": 0.5953783771395683,
+        "accuracy": 80.33584431889517,
+        "samples": 6372
+      },
+      {
+        "client_id": 5,
+        "average_loss": 0.5848078633609571,
+        "accuracy": 82.88907996560619,
+        "samples": 1163
+      }
+    ],
+    "elapsed_time": 909.8600490093231,
+    "noniid_effectiveness": 2.895907026508363
+  },
+  {
+    "round": 85,
+    "timestamp": "2025-10-31 15:09:24",
+    "global_metrics": {
+      "loss": 1.1777143888412767,
+      "accuracy": 68.27,
+      "correct": 6827,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 8,
+        "average_loss": 0.6061884057971666,
+        "accuracy": 79.29658637505541,
+        "samples": 6767
+      },
+      {
+        "client_id": 3,
+        "average_loss": 0.6804798187481033,
+        "accuracy": 79.19611307420494,
+        "samples": 2264
+      },
+      {
+        "client_id": 2,
+        "average_loss": 0.5407803404331207,
+        "accuracy": 81.93659761456371,
+        "samples": 6372
+      },
+      {
+        "client_id": 5,
+        "average_loss": 0.7827796167448947,
+        "accuracy": 75.15047291487532,
+        "samples": 1163
+      },
+      {
+        "client_id": 4,
+        "average_loss": 0.5490568752090136,
+        "accuracy": 81.69830459353717,
+        "samples": 6901
+      }
+    ],
+    "elapsed_time": 919.5017733573914,
+    "noniid_effectiveness": 2.441794875614331
+  },
+  {
+    "round": 86,
+    "timestamp": "2025-10-31 15:09:34",
+    "global_metrics": {
+      "loss": 1.217653120778928,
+      "accuracy": 65.46,
+      "correct": 6546,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 6,
+        "average_loss": 0.5711325637318871,
+        "accuracy": 80.5125467164976,
+        "samples": 5619
+      },
+      {
+        "client_id": 8,
+        "average_loss": 0.5870134273789963,
+        "accuracy": 80.06502142751589,
+        "samples": 6767
+      },
+      {
+        "client_id": 7,
+        "average_loss": 0.5949850193091801,
+        "accuracy": 79.7052913596785,
+        "samples": 4479
+      },
+      {
+        "client_id": 9,
+        "average_loss": 0.6206322487482091,
+        "accuracy": 79.01353965183752,
+        "samples": 6204
+      },
+      {
+        "client_id": 1,
+        "average_loss": 0.8521545784814017,
+        "accuracy": 70.83900226757369,
+        "samples": 2205
+      }
+    ],
+    "elapsed_time": 929.7905855178833,
+    "noniid_effectiveness": 3.627360129919905
+  },
+  {
+    "round": 87,
+    "timestamp": "2025-10-31 15:09:43",
+    "global_metrics": {
+      "loss": 1.014258794344155,
+      "accuracy": 71.57,
+      "correct": 7157,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 2,
+        "average_loss": 0.6167340986430645,
+        "accuracy": 79.9278091650973,
+        "samples": 6372
+      },
+      {
+        "client_id": 5,
+        "average_loss": 0.7171773079194521,
+        "accuracy": 80.48151332760104,
+        "samples": 1163
+      },
+      {
+        "client_id": 8,
+        "average_loss": 0.5735519730819846,
+        "accuracy": 80.70045810551204,
+        "samples": 6767
+      },
+      {
+        "client_id": 3,
+        "average_loss": 0.8407527506351471,
+        "accuracy": 73.76325088339223,
+        "samples": 2264
+      },
+      {
+        "client_id": 6,
+        "average_loss": 0.5520087937739763,
+        "accuracy": 80.7083110873821,
+        "samples": 5619
+      }
+    ],
+    "elapsed_time": 938.9978578090668,
+    "noniid_effectiveness": 2.6915254262355295
+  },
+  {
+    "round": 88,
+    "timestamp": "2025-10-31 15:09:55",
+    "global_metrics": {
+      "loss": 0.8828301910002521,
+      "accuracy": 72.05,
+      "correct": 7205,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 2,
+        "average_loss": 0.5452976965904236,
+        "accuracy": 81.62272441933459,
+        "samples": 6372
+      },
+      {
+        "client_id": 8,
+        "average_loss": 0.5677903125870902,
+        "accuracy": 80.47879414807153,
+        "samples": 6767
+      },
+      {
+        "client_id": 0,
+        "average_loss": 0.6269092328018613,
+        "accuracy": 78.77352611242678,
+        "samples": 8023
+      },
+      {
+        "client_id": 9,
+        "average_loss": 0.6321869317403773,
+        "accuracy": 78.91682785299807,
+        "samples": 6204
+      },
+      {
+        "client_id": 3,
+        "average_loss": 0.6381915190981494,
+        "accuracy": 79.3286219081272,
+        "samples": 2264
+      }
+    ],
+    "elapsed_time": 950.7230064868927,
+    "noniid_effectiveness": 1.0803722516652972
+  },
+  {
+    "round": 89,
+    "timestamp": "2025-10-31 15:10:05",
+    "global_metrics": {
+      "loss": 1.17173923998122,
+      "accuracy": 65.66,
+      "correct": 6566,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 9,
+        "average_loss": 0.574499590495198,
+        "accuracy": 80.54480980012895,
+        "samples": 6204
+      },
+      {
+        "client_id": 1,
+        "average_loss": 0.8797788287912096,
+        "accuracy": 70.52154195011337,
+        "samples": 2205
+      },
+      {
+        "client_id": 8,
+        "average_loss": 0.5483576242091521,
+        "accuracy": 81.74966750406384,
+        "samples": 6767
+      },
+      {
+        "client_id": 5,
+        "average_loss": 1.1018280120272386,
+        "accuracy": 64.7463456577816,
+        "samples": 1163
+      },
+      {
+        "client_id": 4,
+        "average_loss": 0.5823301728124972,
+        "accuracy": 80.43761773655991,
+        "samples": 6901
+      }
+    ],
+    "elapsed_time": 960.1323709487915,
+    "noniid_effectiveness": 6.771479136493347
+  },
+  {
+    "round": 90,
+    "timestamp": "2025-10-31 15:10:16",
+    "global_metrics": {
+      "loss": 1.1208153469547344,
+      "accuracy": 69.69,
+      "correct": 6969,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 8,
+        "average_loss": 0.5371408816778435,
+        "accuracy": 82.03044185015517,
+        "samples": 6767
+      },
+      {
+        "client_id": 2,
+        "average_loss": 0.568340828716755,
+        "accuracy": 80.66541117388574,
+        "samples": 6372
+      },
+      {
+        "client_id": 1,
+        "average_loss": 0.7058946805340903,
+        "accuracy": 76.55328798185941,
+        "samples": 2205
+      },
+      {
+        "client_id": 0,
+        "average_loss": 0.6176061672823769,
+        "accuracy": 78.94802442976443,
+        "samples": 8023
+      },
+      {
+        "client_id": 7,
+        "average_loss": 0.5866913135562625,
+        "accuracy": 80.6206742576468,
+        "samples": 4479
+      }
+    ],
+    "elapsed_time": 971.2957472801208,
+    "noniid_effectiveness": 1.8792380588698299
+  },
+  {
+    "round": 91,
+    "timestamp": "2025-10-31 15:10:28",
+    "global_metrics": {
+      "loss": 1.048355704659869,
+      "accuracy": 67.15,
+      "correct": 6715,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 9,
+        "average_loss": 0.5976268725911367,
+        "accuracy": 80.07736943907156,
+        "samples": 6204
+      },
+      {
+        "client_id": 8,
+        "average_loss": 0.5412948696680788,
+        "accuracy": 80.98123245160338,
+        "samples": 6767
+      },
+      {
+        "client_id": 6,
+        "average_loss": 0.5708734701302919,
+        "accuracy": 80.0142374087916,
+        "samples": 5619
+      },
+      {
+        "client_id": 0,
+        "average_loss": 0.5664646437480336,
+        "accuracy": 80.56836594789979,
+        "samples": 8023
+      },
+      {
+        "client_id": 7,
+        "average_loss": 0.5755886852741241,
+        "accuracy": 81.22348738557714,
+        "samples": 4479
+      }
+    ],
+    "elapsed_time": 983.6203002929688,
+    "noniid_effectiveness": 0.4790979680902895
+  },
+  {
+    "round": 92,
+    "timestamp": "2025-10-31 15:10:39",
+    "global_metrics": {
+      "loss": 1.0653212472891351,
+      "accuracy": 69.1,
+      "correct": 6910,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 3,
+        "average_loss": 0.8445993752943145,
+        "accuracy": 73.85159010600707,
+        "samples": 2264
+      },
+      {
+        "client_id": 7,
+        "average_loss": 0.5570594674774578,
+        "accuracy": 82.13887028354543,
+        "samples": 4479
+      },
+      {
+        "client_id": 0,
+        "average_loss": 0.5636031216099149,
+        "accuracy": 80.6431509410445,
+        "samples": 8023
+      },
+      {
+        "client_id": 2,
+        "average_loss": 0.6201566091179848,
+        "accuracy": 79.26867545511614,
+        "samples": 6372
+      },
+      {
+        "client_id": 6,
+        "average_loss": 0.5315377244895155,
+        "accuracy": 81.91849083466809,
+        "samples": 5619
+      }
+    ],
+    "elapsed_time": 994.5694561004639,
+    "noniid_effectiveness": 3.0350286352533518
+  },
+  {
+    "round": 93,
+    "timestamp": "2025-10-31 15:10:49",
+    "global_metrics": {
+      "loss": 0.9795978050323049,
+      "accuracy": 72.25,
+      "correct": 7225,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 6,
+        "average_loss": 0.531219369308515,
+        "accuracy": 81.9896778786261,
+        "samples": 5619
+      },
+      {
+        "client_id": 3,
+        "average_loss": 0.597045413321919,
+        "accuracy": 79.77031802120142,
+        "samples": 2264
+      },
+      {
+        "client_id": 0,
+        "average_loss": 0.5584288490197015,
+        "accuracy": 80.9173625825751,
+        "samples": 8023
+      },
+      {
+        "client_id": 5,
+        "average_loss": 0.9927621844567751,
+        "accuracy": 67.75580395528804,
+        "samples": 1163
+      },
+      {
+        "client_id": 4,
+        "average_loss": 0.6055563939390359,
+        "accuracy": 79.75655702072163,
+        "samples": 6901
+      }
+    ],
+    "elapsed_time": 1004.3418498039246,
+    "noniid_effectiveness": 5.207387183310967
+  },
+  {
+    "round": 94,
+    "timestamp": "2025-10-31 15:11:00",
+    "global_metrics": {
+      "loss": 0.9889999183879536,
+      "accuracy": 71.45,
+      "correct": 7145,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 0,
+        "average_loss": 0.5868156424590519,
+        "accuracy": 79.38427022310856,
+        "samples": 8023
+      },
+      {
+        "client_id": 9,
+        "average_loss": 0.5930750499066618,
+        "accuracy": 80.17408123791103,
+        "samples": 6204
+      },
+      {
+        "client_id": 5,
+        "average_loss": 0.6573193732060885,
+        "accuracy": 79.27773000859845,
+        "samples": 1163
+      },
+      {
+        "client_id": 2,
+        "average_loss": 0.5409299050271511,
+        "accuracy": 82.20338983050847,
+        "samples": 6372
+      },
+      {
+        "client_id": 8,
+        "average_loss": 0.5557898893108908,
+        "accuracy": 81.06989803457958,
+        "samples": 6767
+      }
+    ],
+    "elapsed_time": 1015.5820240974426,
+    "noniid_effectiveness": 1.0991653312917329
+  },
+  {
+    "round": 95,
+    "timestamp": "2025-10-31 15:11:10",
+    "global_metrics": {
+      "loss": 0.9361869763037202,
+      "accuracy": 68.95,
+      "correct": 6895,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 4,
+        "average_loss": 0.5684086398945914,
+        "accuracy": 81.10418779886973,
+        "samples": 6901
+      },
+      {
+        "client_id": 7,
+        "average_loss": 0.5218296378850937,
+        "accuracy": 83.0096003572226,
+        "samples": 4479
+      },
+      {
+        "client_id": 3,
+        "average_loss": 0.7468381938007143,
+        "accuracy": 76.45759717314488,
+        "samples": 2264
+      },
+      {
+        "client_id": 9,
+        "average_loss": 0.5743156693030879,
+        "accuracy": 81.31850419084462,
+        "samples": 6204
+      },
+      {
+        "client_id": 2,
+        "average_loss": 0.5465237337350846,
+        "accuracy": 81.35593220338983,
+        "samples": 6372
+      }
+    ],
+    "elapsed_time": 1025.9486436843872,
+    "noniid_effectiveness": 2.2043355689382076
+  },
+  {
+    "round": 96,
+    "timestamp": "2025-10-31 15:11:21",
+    "global_metrics": {
+      "loss": 0.921006271224113,
+      "accuracy": 73.84,
+      "correct": 7384,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 7,
+        "average_loss": 0.5521326946360724,
+        "accuracy": 81.46907791917839,
+        "samples": 4479
+      },
+      {
+        "client_id": 2,
+        "average_loss": 0.4929836991429329,
+        "accuracy": 83.2705586942875,
+        "samples": 6372
+      },
+      {
+        "client_id": 4,
+        "average_loss": 0.5259164036424072,
+        "accuracy": 83.04593537168526,
+        "samples": 6901
+      },
+      {
+        "client_id": 1,
+        "average_loss": 0.9135780274868012,
+        "accuracy": 69.0702947845805,
+        "samples": 2205
+      },
+      {
+        "client_id": 9,
+        "average_loss": 0.611471711974783,
+        "accuracy": 79.73887814313346,
+        "samples": 6204
+      }
+    ],
+    "elapsed_time": 1036.6866481304169,
+    "noniid_effectiveness": 5.279014201009325
+  },
+  {
+    "round": 97,
+    "timestamp": "2025-10-31 15:11:33",
+    "global_metrics": {
+      "loss": 1.1317317178294917,
+      "accuracy": 73.43,
+      "correct": 7343,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 9,
+        "average_loss": 0.5411926174593955,
+        "accuracy": 81.73758865248227,
+        "samples": 6204
+      },
+      {
+        "client_id": 2,
+        "average_loss": 0.5065124398469925,
+        "accuracy": 83.11362209667294,
+        "samples": 6372
+      },
+      {
+        "client_id": 1,
+        "average_loss": 0.731101450749806,
+        "accuracy": 75.51020408163265,
+        "samples": 2205
+      },
+      {
+        "client_id": 0,
+        "average_loss": 0.558824887824437,
+        "accuracy": 81.01707590676804,
+        "samples": 8023
+      },
+      {
+        "client_id": 4,
+        "average_loss": 0.5204644948244095,
+        "accuracy": 82.36487465584698,
+        "samples": 6901
+      }
+    ],
+    "elapsed_time": 1048.5777626037598,
+    "noniid_effectiveness": 2.709119521874345
+  },
+  {
+    "round": 98,
+    "timestamp": "2025-10-31 15:11:43",
+    "global_metrics": {
+      "loss": 1.5164016656055572,
+      "accuracy": 71.11,
+      "correct": 7111,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 4,
+        "average_loss": 0.525560166824747,
+        "accuracy": 82.5822344587741,
+        "samples": 6901
+      },
+      {
+        "client_id": 0,
+        "average_loss": 0.5426566539302705,
+        "accuracy": 81.72753334164278,
+        "samples": 8023
+      },
+      {
+        "client_id": 6,
+        "average_loss": 0.5245435022833672,
+        "accuracy": 81.49136857092009,
+        "samples": 5619
+      },
+      {
+        "client_id": 5,
+        "average_loss": 0.9534538105914467,
+        "accuracy": 70.16337059329321,
+        "samples": 1163
+      },
+      {
+        "client_id": 1,
+        "average_loss": 0.709085031066622,
+        "accuracy": 76.59863945578232,
+        "samples": 2205
+      }
+    ],
+    "elapsed_time": 1058.4200344085693,
+    "noniid_effectiveness": 4.6721228550777845
+  },
+  {
+    "round": 99,
+    "timestamp": "2025-10-31 15:11:53",
+    "global_metrics": {
+      "loss": 0.9632485205200827,
+      "accuracy": 70.82,
+      "correct": 7082,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 5,
+        "average_loss": 0.6321652296342348,
+        "accuracy": 81.51332760103182,
+        "samples": 1163
+      },
+      {
+        "client_id": 9,
+        "average_loss": 0.5837754373697891,
+        "accuracy": 80.77047066408768,
+        "samples": 6204
+      },
+      {
+        "client_id": 8,
+        "average_loss": 0.5422366849094067,
+        "accuracy": 81.63144672676223,
+        "samples": 6767
+      },
+      {
+        "client_id": 6,
+        "average_loss": 0.49511093663221056,
+        "accuracy": 82.98629649403809,
+        "samples": 5619
+      },
+      {
+        "client_id": 4,
+        "average_loss": 0.5369901185234388,
+        "accuracy": 82.39385596290393,
+        "samples": 6901
+      }
+    ],
+    "elapsed_time": 1068.7940564155579,
+    "noniid_effectiveness": 0.7632868752497564
+  },
+  {
+    "round": 100,
+    "timestamp": "2025-10-31 15:12:02",
+    "global_metrics": {
+      "loss": 0.9778478130413468,
+      "accuracy": 71.23,
+      "correct": 7123,
+      "total": 10000
+    },
+    "client_results": [
+      {
+        "client_id": 9,
+        "average_loss": 0.5624294139675259,
+        "accuracy": 81.1089619600258,
+        "samples": 6204
+      },
+      {
+        "client_id": 3,
+        "average_loss": 0.7112544170684285,
+        "accuracy": 77.25265017667844,
+        "samples": 2264
+      },
+      {
+        "client_id": 6,
+        "average_loss": 0.5009074534543536,
+        "accuracy": 82.39900338138459,
+        "samples": 5619
+      },
+      {
+        "client_id": 8,
+        "average_loss": 0.5178910572573824,
+        "accuracy": 82.31121619624649,
+        "samples": 6767
+      },
+      {
+        "client_id": 1,
+        "average_loss": 0.7566318103245326,
+        "accuracy": 74.78458049886622,
+        "samples": 2205
+      }
+    ],
+    "elapsed_time": 1077.9428215026855,
+    "noniid_effectiveness": 3.0382979466484277
+  }
+]

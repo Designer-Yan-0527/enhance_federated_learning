@@ -2,6 +2,7 @@ import json
 import csv
 import os
 from typing import List, Dict, Any
+import time
 
 
 class TrainingLogger:
@@ -18,6 +19,7 @@ class TrainingLogger:
         """
         self.log_dir = log_dir
         self.training_history = []
+        self.start_time = time.time()  # 记录开始时间
 
         # 创建日志目录
         if not os.path.exists(log_dir):
@@ -34,12 +36,19 @@ class TrainingLogger:
         """初始化CSV文件并写入表头"""
         if not os.path.exists(self.csv_log_file):
             with open(self.csv_log_file, 'w', newline='', encoding='utf-8') as csvfile:
-                fieldnames = ['round', 'global_loss', 'global_accuracy', 'client_details']
+                fieldnames = [
+                    'round',
+                    'global_loss',
+                    'global_accuracy',
+                    'elapsed_time',
+                    'noniid_effectiveness',
+                    'client_details'
+                ]
                 writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
                 writer.writeheader()
 
     def log_round(self, round_num: int, global_eval_metrics: Dict[str, float],
-                  clients_data: List[Dict[str, Any]]):
+                  clients_data: List[Dict[str, Any]], noniid_effectiveness: float = 0.0):
         """
         记录一轮训练的结果
 
@@ -47,13 +56,18 @@ class TrainingLogger:
             round_num: 联邦学习轮次
             global_eval_metrics: 全局模型在测试集上的评估指标
             clients_data: 各客户端的训练结果
+            noniid_effectiveness: NonIID识别效果指标
         """
+        elapsed_time = time.time() - self.start_time
+
         # 构造日志条目
         log_entry = {
             "round": round_num,
             "timestamp": self._get_timestamp(),
             "global_metrics": global_eval_metrics,
-            "client_results": clients_data  # 修改为 clients_data
+            "client_results": clients_data,
+            "elapsed_time": elapsed_time,
+            "noniid_effectiveness": noniid_effectiveness
         }
 
         # 添加到历史记录
@@ -63,7 +77,7 @@ class TrainingLogger:
         self._save_to_json()
 
         # 保存到CSV文件
-        self._save_to_csv(round_num, global_eval_metrics, clients_data)  # 修改为 clients_data
+        self._save_to_csv(round_num, global_eval_metrics, clients_data, elapsed_time, noniid_effectiveness)
 
         print(f"Round {round_num} metrics logged successfully.")
 
@@ -79,16 +93,26 @@ class TrainingLogger:
             json.dump(self.training_history, f, ensure_ascii=False, indent=2)
 
     def _save_to_csv(self, round_num: int, global_eval_metrics: Dict[str, float],
-                     clients_data: List[Dict[str, Any]]):
+                     clients_data: List[Dict[str, Any]], elapsed_time: float,
+                     noniid_effectiveness: float):
         """保存关键指标到CSV文件"""
         with open(self.csv_log_file, 'a', newline='', encoding='utf-8') as csvfile:
-            writer = csv.writer(csvfile)
-            writer.writerow([
-                round_num,
-                global_eval_metrics.get('loss', ''),
-                global_eval_metrics.get('accuracy', ''),
-                json.dumps(clients_data, ensure_ascii=False)
+            writer = csv.DictWriter(csvfile, fieldnames=[
+                'round',
+                'global_loss',
+                'global_accuracy',
+                'elapsed_time',
+                'noniid_effectiveness',
+                'client_details'
             ])
+            writer.writerow({
+                'round': round_num,
+                'global_loss': global_eval_metrics.get('loss', ''),
+                'global_accuracy': global_eval_metrics.get('accuracy', ''),
+                'elapsed_time': elapsed_time,
+                'noniid_effectiveness': noniid_effectiveness,
+                'client_details': json.dumps(clients_data, ensure_ascii=False)
+            })
 
     def save_final_results(self, final_metrics: Dict[str, float]):
         """
@@ -124,27 +148,10 @@ class TrainingLogger:
             round_num = entry['round']
             global_loss = entry['global_metrics'].get('loss', 'N/A')
             global_acc = entry['global_metrics'].get('accuracy', 'N/A')
-            print(f"轮次 {round_num}: 全局损失={global_loss}, 全局准确率={global_acc}")
-
-
-# 使用示例
-if __name__ == "__main__":
-    # 创建日志记录器实例
-    logger = TrainingLogger()
-
-    # 模拟记录几轮训练数据
-    for i in range(1, 4):
-        global_metrics = {
-            "loss": 0.5 - i * 0.1,
-            "accuracy": 70.0 + i * 5
-        }
-
-        client_results = [
-            {"client_id": 0, "average_loss": 0.4 - i * 0.05, "accuracy": 75.0 + i * 3},
-            {"client_id": 1, "average_loss": 0.6 - i * 0.1, "accuracy": 65.0 + i * 7}
-        ]
-
-        logger.log_round(i, global_metrics, client_results)
-
-    # 打印摘要
-    logger.print_summary()
+            elapsed_time = entry.get('elapsed_time', 'N/A')
+            noniid_effectiveness = entry.get('noniid_effectiveness', 'N/A')
+            print(f"轮次 {round_num}: "
+                  f"全局损失={global_loss}, "
+                  f"全局准确率={global_acc}, "
+                  f"运行时间={elapsed_time:.2f}s, "
+                  f"NonIID效果={noniid_effectiveness:.4f}")
