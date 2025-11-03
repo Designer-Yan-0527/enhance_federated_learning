@@ -16,15 +16,26 @@ numpy>=1.21.0
 
 ## 项目文件结构与功能说明
 
-- `enhance_federated_learning.py`: 联邦学习主框架实现，包含全局模型管理、客户端协调和模型聚合逻辑
-- `enhance_federated_main_continual.py`: 主程序入口，负责初始化训练流程、数据分割和执行联邦持续学习循环
-- `enhance_fl_client.py`: 客户端实现，处理本地训练、梯度计算和与全局模型的交互
-- `model.py`: 模型定义文件，包含 ResNet-18 模型实现
-- `data_loader.py`: 数据加载器，处理 CIFAR-100 数据集的预处理和加载
-- `config.py`: 配置参数文件，包含所有可调节的超参数
-- `training_logger.py`: 训练日志记录器，负责记录训练过程中的各项指标
-- `classes.py`: CIFAR-100 类别标签定义文件
-- `predict.py`: 模型预测工具，用于对新图片进行分类预测
+```
+enhance_federated_learning/
+├── config/
+│   └── config.py              # 配置参数文件，包含所有可调节的超参数
+├── data/
+│   ├── data_loader.py         # 数据加载器，处理 CIFAR-100 数据集的预处理和加载
+│   └── cifar100_classes.py    # CIFAR-100 类别标签定义文件
+├── model/
+│   ├── resnet18.py            # ResNet-18 模型实现
+│   └── client.py              # 客户端实现，处理本地训练、梯度计算和与全局模型的交互
+├── federated_learning/
+│   └── framework.py           # 联邦学习主框架实现，包含全局模型管理、客户端协调和模型聚合逻辑
+├── utils/
+│   ├── training_logger.py     # 训练日志记录器，负责记录训练过程中的各项指标
+│   └── predict.py             # 模型预测工具，用于对新图片进行分类预测
+├── final_model/               # 模型保存目录
+├── logs/                      # 日志保存目录
+└── enhance_federated_main_continual.py  # 主程序入口，负责初始化训练流程、数据分割和执行联邦持续学习循环
+```
+
 
 ## 安装依赖
 
@@ -49,19 +60,19 @@ python enhance_federated_main_continual.py
 使用训练好的模型进行图片预测:
 
 ```bash
-python predict.py <image_path> <model_path>
+python utils/predict.py <image_path> <model_path>
 ```
 
 
 示例:
 ```bash
-python predict.py test_image.jpg continual_enhanced_federated_resnet18_cifar100.pth
+python utils/predict.py test_image.jpg final_model/continual_enhanced_federated_resnet18_cifar100.pth
 ```
 
 
 ## 超参数详细说明
 
-### 联邦学习相关参数 (位于 `config.py` 的 `MODEL_CONFIG` 中)
+### 联邦学习相关参数 (位于 `config/config.py` 的 `MODEL_CONFIG` 中)
 
 | 参数名                | 默认值  | 说明                                   |
 |--------------------|------|--------------------------------------|
@@ -75,23 +86,23 @@ python predict.py test_image.jpg continual_enhanced_federated_resnet18_cifar100.
 | `fed_use_noniid`   | True | 是否使用 Non-IID 数据划分                    |
 | `fed_alpha`        | 0.5  | Dirichlet 分布参数，越小 non-IID 程度越高       |
 
-### 数据相关参数 (位于 `config.py` 的 `DATA_CONFIG` 中)
+### 数据相关参数 (位于 `config/config.py` 的 `DATA_CONFIG` 中)
 
 | 参数名             | 默认值  | 说明                |
 |-----------------|------|-------------------|
 | `batch_size`    | 64   | 每个训练批次包含的样本数量     |
 | `shuffle_train` | True | 训练集是否在每个epoch打乱顺序 |
 
-### 模型训练参数 (位于 `config.py` 的 `MODEL_CONFIG` 中)
+### 模型训练参数 (位于 `config/config.py` 的 [MODEL_CONFIG](file://C:\py\Projects\enhance_federated_learning\config\config.py#L13-L40) 中)
 
-| 参数名             | 默认值   | 说明                         |
-|-----------------|-------|----------------------------|
-| `num_classes`   | 100   | 分类任务的类别数（CIFAR-100有100个类别） |
-| `pretrained`    | False | 是否使用ImageNet预训练权重初始化模型     |
-| `learning_rate` | 0.01  | 本地训练的学习率                   |
-| `optimizer`     | "SGD" | 优化器类型（可选：Adam、SGD等）        |
+| 参数名                                                                                   | 默认值   | 说明                         |
+|---------------------------------------------------------------------------------------|-------|----------------------------|
+| `num_classes`                                                                         | 100   | 分类任务的类别数（CIFAR-100有100个类别） |
+| `pretrained`                                                                          | False | 是否使用ImageNet预训练权重初始化模型     |
+| `learning_rate`                                                                       | 0.01  | 本地训练的学习率                   |
+| [optimizer](file://C:\py\Projects\enhance_federated_learning\model\client.py#L46-L49) | "SGD" | 优化器类型（可选：Adam、SGD等）        |
 
-### 持续学习相关参数 (位于 `config.py` 的 `MODEL_CONFIG` 中)
+### 持续学习相关参数 (位于 `config/config.py` 的 [MODEL_CONFIG](file://C:\py\Projects\enhance_federated_learning\config\config.py#L13-L40) 中)
 
 | 参数名               | 默认值 | 说明                 |
 |-------------------|-----|--------------------|
@@ -144,7 +155,7 @@ python predict.py test_image.jpg continual_enhanced_federated_resnet18_cifar100.
 
 ## 输出文件
 
-- `continual_enhanced_federated_resnet18_cifar100.pth`: 训练完成的全局模型
+- `final_model/continual_enhanced_federated_resnet18_cifar100.pth`: 训练完成的全局模型
 - `continual_logs_cifar100/training_log.json`: 训练历史记录(JSON格式)
 - `continual_logs_cifar100/training_log.csv`: 训练历史记录(CSV格式)
 - `continual_logs_cifar100/final_results.json`: 最终评估结果
