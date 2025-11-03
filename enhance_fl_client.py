@@ -1,13 +1,14 @@
 import torch
 import copy
-from model import ResNet18, SimpleNN
+import random
+from model import ResNet18
 from config import MODEL_CONFIG, DEVICE
 from typing import Dict
 
 
 class EnhancedFLClient:
     """
-    增强版联邦学习客户端实现，支持梯度对齐惩罚
+    增强版联邦学习客户端实现，支持梯度对齐惩罚和联邦持续学习
     """
 
     def __init__(self, client_id: int, data_loader, model_type: str = "resnet18", gamma: float = 0.1):
@@ -20,6 +21,7 @@ class EnhancedFLClient:
             model_type: 模型类型
             gamma: 梯度对齐惩罚系数
         """
+        self.current_data_loader = None
         self.client_id = client_id
         self.data_loader = data_loader
         self.model_type = model_type
@@ -27,11 +29,15 @@ class EnhancedFLClient:
         self.ema_gradient = None
         self.global_state = None
 
+        # 持续学习相关属性
+        self.task_memory = {}  # 存储旧任务的重要样本
+        self.memory_size = MODEL_CONFIG.get("fcl_memory_size", 200)
+        self.current_task_id = None
+        self.seen_classes = set()
+
         # 初始化本地模型
         if model_type == "resnet18":
             self.local_model = ResNet18()
-        elif model_type == "simple":
-            self.local_model = SimpleNN()
         else:
             raise ValueError(f"Unsupported model type: {model_type}")
 
@@ -43,6 +49,62 @@ class EnhancedFLClient:
             lr=MODEL_CONFIG.get("learning_rate", 0.001)
         )
         self.criterion = torch.nn.CrossEntropyLoss()
+
+    def register_task_data(self, task_id, data_loader, task_classes):
+        """
+        注册当前任务数据，用于后续记忆存储
+
+        Args:
+            task_id: 任务ID
+            data_loader: 任务数据加载器
+            task_classes: 任务包含的类别列表
+        """
+        self.current_task_id = task_id
+        self.current_data_loader = data_loader
+        self.seen_classes.update(task_classes)
+
+    def store_task_memory(self):
+        """
+        存储当前任务的重要样本到记忆中
+        """
+        if self.current_task_id is None:
+            return
+
+        # 简化实现：随机选择样本存储
+        memory_samples = []
+        count = 0
+
+        # 从当前任务数据中随机选择样本
+        for data, target in self.current_data_loader:
+            for i in range(len(data)):
+                if count >= self.memory_size // 10:  # 每个任务存储部分样本
+                    break
+                memory_samples.append((data[i], target[i]))
+                count += 1
+            if count >= self.memory_size // 10:
+                break
+
+        self.task_memory[self.current_task_id] = memory_samples
+
+    def get_replay_data(self, batch_size):
+        """
+        获取回放数据用于防止遗忘
+        """
+        replay_data = []
+        replay_targets = []
+
+        # 从记忆中随机采样
+        for task_id, samples in self.task_memory.items():
+            if samples:
+                selected_samples = random.sample(samples,
+                                                 min(batch_size // max(len(self.task_memory), 1), len(samples)))
+                for data, target in selected_samples:
+                    replay_data.append(data)
+                    replay_targets.append(target)
+
+        if replay_data:
+            return torch.stack(replay_data), torch.stack(replay_targets)
+        return None, None
 
     def update_local_model(self, global_state_dict: Dict[str, torch.Tensor], ema_gradient=None):
         """
@@ -71,12 +133,6 @@ class EnhancedFLClient:
                 for name, param in self.local_model.resnet.fc.named_parameters():
                     if param.grad is not None:
                         classifier_grad[f'resnet.fc.{name}'] = param.grad.clone()
-            elif hasattr(self.local_model, 'layers'):
-                # SimpleNN情况 - 假设最后一层是分类器
-                for name, param in self.local_model.layers[-1].named_parameters():
-                    if param.grad is not None:
-                        classifier_grad[f'layers.{len(self.local_model.layers) - 1}.{name}'] = param.grad.clone()
-
             return classifier_grad if classifier_grad else None
         except (AttributeError, KeyError) as e:
             print(f"Error computing classifier gradient: {e}")
@@ -103,12 +159,13 @@ class EnhancedFLClient:
 
         return penalty_grads
 
-    def train_local(self, epochs: int = 1) -> Dict[str, float]:
+    def train_local(self, epochs: int = 1, use_replay: bool = True) -> Dict[str, float]:
         """
         在本地数据上训练模型
 
         Args:
             epochs: 本地训练轮数
+            use_replay: 是否使用回放数据防止遗忘
 
         Returns:
             训练结果
@@ -122,9 +179,28 @@ class EnhancedFLClient:
             for batch_idx, (data, target) in enumerate(self.data_loader):
                 data, target = data.to(DEVICE), target.to(DEVICE)
 
+                # 如果使用回放数据，合并当前数据和回放数据
+                if use_replay and len(self.task_memory) > 0:
+                    replay_data, replay_targets = self.get_replay_data(len(data) // 2)
+                    if replay_data is not None:
+                        replay_data = replay_data.to(DEVICE)
+                        replay_targets = replay_targets.to(DEVICE)
+                        # 合并当前批次和回放数据
+                        data = torch.cat([data, replay_data], dim=0)
+                        target = torch.cat([target, replay_targets], dim=0)
+
                 self.optimizer.zero_grad()
                 output = self.local_model(data)
                 loss = self.criterion(output, target)
+
+                # 添加L2正则化防止对旧知识的覆盖
+                if self.global_state is not None:
+                    reg_loss = 0
+                    for name, param in self.local_model.named_parameters():
+                        if name in self.global_state:
+                            reg_loss += (param - self.global_state[name]).pow(2).sum()
+                    loss += 0.001 * reg_loss  # 正则化系数
+
                 loss.backward()
 
                 # 如果有EMA梯度，添加梯度对齐惩罚

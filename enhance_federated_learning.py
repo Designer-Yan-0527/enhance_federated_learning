@@ -1,15 +1,16 @@
+# enhance_federated_learning.py
 import torch
 import copy
 from collections import OrderedDict
 from typing import List, Dict, Any
-from model import ResNet18, SimpleNN
+from model import ResNet18
 from config import DEVICE
 from enhance_fl_client import EnhancedFLClient
 
 
 class EnhancedFederatedLearning:
     """
-    增强版联邦学习框架实现，支持梯度对齐惩罚和EMA
+    增强版联邦学习框架实现，支持梯度对齐惩罚和联邦持续学习
     """
 
     def __init__(self, model_type="resnet18", ema_weight=0.95, gamma=0.1):
@@ -17,7 +18,7 @@ class EnhancedFederatedLearning:
         初始化增强版联邦学习框架
 
         Args:
-            model_type: 模型类型 ("resnet18" 或 "simple")
+            model_type: 模型类型 ("resnet18")
             ema_weight: 指数移动平均权重
             gamma: 梯度对齐惩罚系数
         """
@@ -27,13 +28,13 @@ class EnhancedFederatedLearning:
         self.global_model = self._initialize_model()
         self.clients = []
         self.ema_gradient = None
+        self.current_task_id = 0
+        self.task_sequence = []
 
     def _initialize_model(self):
         """初始化全局模型"""
         if self.model_type == "resnet18":
             model = ResNet18()
-        elif self.model_type == "simple":
-            model = SimpleNN()
         else:
             raise ValueError(f"Unsupported model type: {self.model_type}")
         return model.to(DEVICE)
@@ -48,6 +49,31 @@ class EnhancedFederatedLearning:
         """
         client = EnhancedFLClient(client_id, client_data_loader, self.model_type, self.gamma)
         self.clients.append(client)
+
+    def register_task(self, task_id: int, task_data_loaders: List, task_classes: List):
+        """
+        注册新任务
+
+        Args:
+            task_id: 任务ID
+            task_data_loaders: 该任务的客户端数据加载器列表
+            task_classes: 任务包含的类别列表
+        """
+        self.current_task_id = task_id
+        self.task_sequence.append(task_id)
+
+        # 更新客户端数据
+        for i, client in enumerate(self.clients):
+            if i < len(task_data_loaders):
+                client.register_task_data(task_id, task_data_loaders[i], task_classes)
+
+    def finish_task(self):
+        """
+        完成当前任务，触发记忆存储
+        """
+        # 让所有客户端存储当前任务的记忆
+        for client in self.clients:
+            client.store_task_memory()
 
     @staticmethod
     def compute_global_classifier_gradient(sampled_clients):
@@ -110,13 +136,14 @@ class EnhancedFederatedLearning:
         sampled_indices = random.sample(range(len(self.clients)), num_sampled)
         return [self.clients[i] for i in sampled_indices]
 
-    def train_round(self, epochs: int = 1, global_lr: float = 1.0) -> Dict[str, Any]:
+    def _perform_federated_round(self, epochs: int, global_lr: float, use_replay: bool = False) -> Dict[str, Any]:
         """
-        执行一轮联邦学习训练
+        执行一轮联邦学习训练的通用逻辑
 
         Args:
             epochs: 本地训练轮数
             global_lr: 全局步长
+            use_replay: 是否使用回放数据防止遗忘（仅在持续学习中使用）
 
         Returns:
             训练结果统计
@@ -142,7 +169,7 @@ class EnhancedFederatedLearning:
 
         for client in sampled_clients:
             print(f"Training client {client.client_id}...")
-            result = client.train_local(epochs)
+            result = client.train_local(epochs, use_replay=use_replay)
             update = client.get_model_update()
             client_updates.append(update)
             client_results.append(result)
@@ -154,7 +181,7 @@ class EnhancedFederatedLearning:
             # 更新全局模型
             global_state = self.global_model.state_dict()
             for key in global_state.keys():
-                # 确保类型一致性，将global_state[key]转换为与aggregated_update[key]相同的类型
+                # 确保类型一致性
                 if global_state[key].dtype != aggregated_update[key].dtype:
                     global_state[key] = global_state[key].to(aggregated_update[key].dtype)
                 global_state[key] += global_lr * aggregated_update[key]
@@ -164,6 +191,13 @@ class EnhancedFederatedLearning:
             "client_results": client_results,
             "sampled_clients": len(sampled_clients)
         }
+
+    def train_continual_round(self, epochs: int = 1, global_lr: float = 1.0,
+                              use_replay: bool = True) -> Dict[str, Any]:
+        """
+        执行一轮联邦持续学习训练
+        """
+        return self._perform_federated_round(epochs, global_lr, use_replay=use_replay)
 
     @staticmethod
     def aggregate_updates(client_updates: List[Dict[str, torch.Tensor]]) -> Dict[str, torch.Tensor]:
