@@ -1,3 +1,8 @@
+# 忽略数据文件
+data/cifar-100-python.tar.gz
+data/cifar-100-python/train
+data/cifar-100-python/
+
 # 或者更通用的规则
 *.tar.gz
 data/
