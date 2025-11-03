@@ -3,9 +3,9 @@ import torch
 import copy
 from collections import OrderedDict
 from typing import List, Dict, Any
-from model import ResNet18
-from config import DEVICE
-from enhance_fl_client import EnhancedFLClient
+from model.resnet18 import ResNet18
+from config.config import DEVICE
+from model.client import EnhancedFLClient
 
 
 class EnhancedFederatedLearning:

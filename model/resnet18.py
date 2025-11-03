@@ -1,6 +1,6 @@
 import torch.nn as nn
 from torchvision import models
-from config import MODEL_CONFIG  # 导入模型配置
+from config.config import MODEL_CONFIG  # 导入模型配置
 
 
 class ResNet18(nn.Module):

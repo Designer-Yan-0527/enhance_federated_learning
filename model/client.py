@@ -1,8 +1,8 @@
 import torch
 import copy
 import random
-from model import ResNet18
-from config import MODEL_CONFIG, DEVICE
+from model.resnet18 import ResNet18
+from config.config import MODEL_CONFIG, DEVICE
 from typing import Dict
 
 

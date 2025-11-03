@@ -1,10 +1,10 @@
 import torch
 from torch.utils.data import Subset, DataLoader
 import random
-from data_loader import get_data_loaders, create_task_sequence_datasets
-from enhance_federated_learning import EnhancedFederatedLearning
-from config import DATA_CONFIG, MODEL_CONFIG
-from training_logger import TrainingLogger
+from data.data_loader import get_data_loaders, create_task_sequence_datasets
+from enhance_federated_learning.framework import EnhancedFederatedLearning
+from config.config import DATA_CONFIG, MODEL_CONFIG
+from utils.training_logger import TrainingLogger
 import numpy as np
 
 
@@ -117,7 +117,7 @@ def evaluate_global_model(model, test_loader, task_classes=None):
     Returns:
         包含评估指标的字典
     """
-    from config import DEVICE
+    from config.config import DEVICE
 
     model.eval()
     criterion = torch.nn.CrossEntropyLoss()
@@ -177,7 +177,7 @@ def main_continual():
     print("Starting enhanced continual federated learning with CIFAR-100...")
 
     # 显示设备信息
-    from config import DEVICE
+    from config.config import DEVICE
     print(f"Using device: {DEVICE}")
 
     # 显示关键超参数
@@ -306,7 +306,7 @@ def main_continual():
         print(f"累积任务准确率 ({len(all_seen_classes)} 个类别): {cumulative_metrics['accuracy']:.2f}%")
 
     # 保存最终的全局模型
-    model_path = "continual_enhanced_federated_resnet18_cifar100.pth"
+    model_path = "final_model/continual_enhanced_federated_resnet18_cifar100.pth"
     fl_framework.save_global_model(model_path)
     print(f"\n持续联邦学习完成，全局模型已保存为 '{model_path}'")
 

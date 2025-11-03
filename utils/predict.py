@@ -1,9 +1,9 @@
 import torch
 from PIL import Image
 from torchvision import transforms
-from model import ResNet18
-from classes import CIFAR100_CLASSES
-from config import DEVICE
+from model.resnet18 import ResNet18
+from data.cifar100_classes import CIFAR100_CLASSES
+from config.config import DEVICE
 
 
 def predict_image(img_path, mdl_path):
